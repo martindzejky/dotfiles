@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh settings
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
