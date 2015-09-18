@@ -7,7 +7,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # plugins
-plugins=(extract git node npm)
+plugins=(extract git node npm z)
 
 # load oh-my-zsh
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -15,6 +15,3 @@ source $ZSH/oh-my-zsh.sh
 
 # load my aliases
 source $HOME/.aliases
-
-# load z
-source $HOME/z.sh
