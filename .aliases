@@ -29,3 +29,6 @@ alias ns="npm search"
 
 # deleting
 alias rm="rm -i"
+
+# atom
+alias atom=atom.cmd
