@@ -1,18 +1,36 @@
-# path to oh-my-zsh
-export ZSH=$HOME/.oh-my-zsh
+# load antigen
+source $HOME/antigen.zsh
 
 # oh-my-zsh settings
-ZSH_THEME="agnoster"
-ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 DEFAULT_USER=chuckeles
-
-# plugins
-plugins=(extract git node npm z)
+ENABLE_CORRECTION="true"
+ZSH_THEME="agnoster"
 
 # load oh-my-zsh
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-source $ZSH/oh-my-zsh.sh
+antigen use oh-my-zsh
+
+# load bundles
+antigen bundles <<EOBUNDLES
+
+  # extracting archives
+  extract
+
+  # development stuff
+  git
+  node
+  npm
+
+  # navigation
+  rupa/z
+
+EOBUNDLES
+
+# load theme
+antigen theme agnoster
+
+# tell antigen I'm done
+antigen apply
 
 # load my aliases
-source $HOME/.aliases
+source $HOME/aliases.zsh
