@@ -24,6 +24,9 @@ antigen bundles <<EOBUNDLES
   # navigation
   rupa/z
 
+  # more autocomplete
+  zsh-users/zsh-completions src
+
 EOBUNDLES
 
 # load theme
