@@ -2,6 +2,14 @@
 # my bash aliases
 #
 
+# navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
 # ls
 alias l="ls -CFh"
 alias la="l -A"
@@ -25,3 +33,7 @@ alias bs="bower search"
 alias ni="npm install"
 alias nl="npm list"
 alias ns="npm search"
+
+# commonly accessed directories
+alias d="cd ~/Downloads"
+alias p="cd ~/Projects"
