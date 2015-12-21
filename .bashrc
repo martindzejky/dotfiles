@@ -39,3 +39,8 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 elif [ -f /etc/bash_completion ]; then
   source /etc/bash_completion
 fi
+
+# include the other configuration files
+for file in ./.bash_{aliases,colors,prompt}; do
+  [[ -r "$file" ]] && source "$file"
+done
