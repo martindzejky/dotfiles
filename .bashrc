@@ -37,3 +37,9 @@ fi
 for file in ./.bash_{aliases,colors,exports,prompt}; do
   [[ -r "$file" ]] && source "$file"
 done
+
+# include thefuck and z
+# https://github.com/nvbn/thefuck
+# https://github.com/rupa/z
+eval $(thefuck --alias)
+source ~/Bin/z.sh

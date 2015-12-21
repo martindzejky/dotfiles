@@ -23,6 +23,7 @@ alias g=git
 alias gu=gulp
 alias n=npm
 alias no=node
+alias a=atom
 
 # bower
 alias bi="bower install"
