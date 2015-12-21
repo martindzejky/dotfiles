@@ -1,21 +1,11 @@
 #
-# chuckeles ~ bash configuration file
+# chuckeles ~ my bash configuration file
 #
-# some things were left from the default configuration file,
-# some were changed and added
+# configures options, adds autocomplete, aliases, colors, etc. for bash
 #
-
-# if not running interactively, don't do anything
-case $- in
-  *i*) ;;
-  *) return ;;
-esac
 
 # don't put duplicate lines or lines starting with space in the history
 HISTCONTROL=ignoreboth
-
-# append to the history file, don't overwrite it
-shopt -s histappend
 
 # set history length
 HISTSIZE=1000
@@ -25,8 +15,20 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS
 shopt -s checkwinsize
 
-# make less more friendly for non-text input files
-[[ -x /usr/bin/lesspipe ]] && eval "$(SHELL=/bin/sh lesspipe)"
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# case-insensitive globbing
+shopt -s nocaseglob
+
+# autocorrect typos in path names when using cd
+shopt -s cdspell
+
+# enable recursive globbing
+shopt -s globstar
+
+# enable autocd
+shopt -s autocd
 
 # include bash color variables
 if [ -f ~/.bash_colors ]; then
