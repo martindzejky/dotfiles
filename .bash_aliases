@@ -18,12 +18,12 @@ alias lla="l -Al"
 alias lal=lla
 
 # commonly used programs
+alias a=atom
 alias b=bower
 alias g=git
 alias gu=gulp
 alias n=npm
 alias no=node
-alias a=atom
 
 # bower
 alias bi="bower install"
@@ -34,7 +34,3 @@ alias bs="bower search"
 alias ni="npm install"
 alias nl="npm list"
 alias ns="npm search"
-
-# commonly accessed directories
-alias d="cd ~/Downloads"
-alias p="cd ~/Projects"
