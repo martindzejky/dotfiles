@@ -4,13 +4,6 @@
 # configures options, adds autocomplete, aliases, colors, etc. for bash
 #
 
-# don't put duplicate lines or lines starting with space in the history
-HISTCONTROL=ignoreboth
-
-# set history length
-HISTSIZE=1000
-HISTFILESIZE=2000
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS
 shopt -s checkwinsize
@@ -41,6 +34,6 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 # include the other configuration files
-for file in ./.bash_{aliases,colors,prompt}; do
+for file in ./.bash_{aliases,colors,exports,prompt}; do
   [[ -r "$file" ]] && source "$file"
 done
