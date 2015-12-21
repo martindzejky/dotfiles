@@ -1,0 +1,9 @@
+#
+# my primitive bash prompt
+#
+
+# set prompt to the cwd $
+PS1="${Blue}\w \$ ${Color_Off}"
+
+# set the window title to cwd
+PS1="\[\e]0;\w\a\]$PS1"
