@@ -30,10 +30,8 @@ shopt -s globstar
 # enable autocd
 shopt -s autocd
 
-# include bash color variables
-if [ -f ~/.bash_colors ]; then
-  . ~/.bash_colors
-fi
+# add ~/Bin to the $PATH
+[[ -d ~/Bin ]] && export PATH="$PATH:~/Bin"
 
 # enable color support of ls and others
 if [[ -x /usr/bin/dircolors ]]; then
@@ -50,21 +48,9 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# include my cool prompt
-if [ -f ~/.bash_prompt ]; then
-  . ~/.bash_prompt
-fi
-
-# include my aliases
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
-
-# enable programmable completion features
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
+# enable bash completion
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+  source /usr/share/bash-completion/bash_completion
+elif [ -f /etc/bash_completion ]; then
+  source /etc/bash_completion
 fi
