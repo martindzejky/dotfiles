@@ -34,3 +34,11 @@ alias bs="bower search"
 alias ni="npm install"
 alias nl="npm list"
 alias ns="npm search"
+
+# git
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gd="git diff"
+alias go="git checkout"
+alias gs="git status"
