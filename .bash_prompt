@@ -61,7 +61,7 @@ prompt_git() {
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # construct PS1
-PS1="$IBlue\w " # current working directory
-PS1+="$IGreen\$(prompt_git)" # git details
-PS1+="$IWhite\$ " # the $
-PS1+="$Color_Off" # reset color
+PS1="\[$IBlue\]\w " # current working directory
+PS1+="\[$IGreen\]\$(prompt_git)" # git details
+PS1+="\[$IWhite\]\$ " # the $
+PS1+="\[$Color_Off\]" # reset color
