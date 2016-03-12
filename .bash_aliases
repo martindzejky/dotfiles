@@ -39,6 +39,7 @@ alias ns="npm search"
 
 # git
 alias ga="git add"
+alias gaa="git add --all"
 alias gb="git branch"
 alias gc="git commit"
 alias gd="git diff"
