@@ -20,6 +20,7 @@ alias lal=lla
 # commonly used programs
 alias a=atom
 alias b=bower
+alias bu=bundler
 alias g=git
 alias gu=gulp
 alias n=npm
