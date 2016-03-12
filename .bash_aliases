@@ -51,7 +51,7 @@ alias gs="git status"
 # ruby
 alias bue="bundler exec"
 alias bui="bundle install"
-alias rc="rails db"
+alias rc="rails console"
 alias rg="rails generate"
 alias rn="rails new"
 alias rs="rails server"
