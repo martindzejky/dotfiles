@@ -11,7 +11,7 @@ set autoread
 " :W sudo saves the file using sudo
 command W w !sudo tee % > /dev/null
 
-" set 7 lines to the cursor
+" set 20 lines to the cursor
 set so=20
 
 " turn on the WiLd menu
@@ -67,10 +67,7 @@ set foldcolumn=1
 syntax enable 
 
 " set color scheme
-try
-  colorscheme desert
-catch
-endtry
+colorscheme desert
 
 " set utf8 encoding
 set encoding=utf8
@@ -93,10 +90,13 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
-" Linebreak on 500 characters
+" linebreak on 500 characters
 set lbr
 set tw=500
 
 set ai " auto indent
 set si " smart indent
 set wrap " wrap lines
+
+" line number
+set number
