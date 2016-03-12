@@ -24,6 +24,7 @@ alias g=git
 alias gu=gulp
 alias n=npm
 alias no=node
+alias r=rails
 
 # bower
 alias bi="bower install"
@@ -40,6 +41,15 @@ alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
 alias gd="git diff"
+alias gl="git log"
 alias go="git checkout"
 alias gp="git push"
 alias gs="git status"
+
+# ruby
+alias bue="bundler exec"
+alias bui="bundle install"
+alias rc="rails db"
+alias rg="rails generate"
+alias rn="rails new"
+alias rs="rails server"
