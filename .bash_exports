@@ -13,3 +13,7 @@ export HISTFILESIZE=${HISTSIZE}
 export EDITOR=nano
 export PAGER=less
 export MANPAGER="less -X"
+
+# ruby paths
+export GEM_HOME=~/.gem
+export PATH=$PATH:$GEM_HOME/bin
