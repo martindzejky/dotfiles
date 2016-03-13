@@ -46,6 +46,8 @@ alias gd="git diff"
 alias gl="git log"
 alias go="git checkout"
 alias gp="git push"
+alias gr="git rebase"
+alias gri="git rebase -i"
 alias gs="git status"
 
 # ruby
