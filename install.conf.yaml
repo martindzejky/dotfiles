@@ -13,6 +13,7 @@
     ~/.bash_prompt: ".bash_prompt"
     ~/.bashrc: ".bashrc"
 
+    ~/.gemrc: ".gemrc"
     ~/.gitconfig: ".gitconfig"
     ~/.vimrc: ".vimrc"
 
