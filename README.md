@@ -1,3 +1,3 @@
 # dotfiles
 
-My personal dotfiles. Currently in use on Kubuntu in bash.
+My personal dotfiles. So it always feels like $HOME...
