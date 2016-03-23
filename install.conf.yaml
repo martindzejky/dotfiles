@@ -5,8 +5,6 @@
 - clean: ["~"]
 
 - link:
-    ~/.dotfiles: ""
-
     ~/.bash_aliases: ".bash_aliases"
     ~/.bash_colors: ".bash_colors"
     ~/.bash_exports: ".bash_exports"
