@@ -1,0 +1,12 @@
+[user]
+  name = Martin Chuckeles
+  email = martin@jakubik.info
+[github]
+  user = chuckeles
+[push]
+  default = simple
+[core]
+  editor = vim
+[color]
+  diff = auto
+  ui = auto
