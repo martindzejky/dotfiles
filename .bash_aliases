@@ -27,6 +27,11 @@ alias n=npm
 alias no=node
 alias r=rails
 
+# aptitude
+alias apti="aptitude install"
+alias aptp="aptitude purge"
+alias aptr="aptitude remove"
+
 # bower
 alias boi="bower install"
 alias bol="bower list"
