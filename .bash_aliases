@@ -19,7 +19,7 @@ alias lal=lla
 
 # commonly used programs
 alias a=atom
-alias b=bower
+alias bo=bower
 alias bu=bundler
 alias g=git
 alias gu=gulp
@@ -28,9 +28,9 @@ alias no=node
 alias r=rails
 
 # bower
-alias bi="bower install"
-alias bl="bower list"
-alias bs="bower search"
+alias boi="bower install"
+alias bol="bower list"
+alias bos="bower search"
 
 # npm
 alias ni="npm install"
@@ -45,14 +45,17 @@ alias gc="git commit"
 alias gd="git diff"
 alias gl="git log"
 alias go="git checkout"
-alias gp="git push"
+alias gps="git push"
+alias gpl="git pull"
 alias gr="git rebase"
 alias gri="git rebase -i"
 alias gs="git status"
 
-# ruby
+# bundler
 alias bue="bundler exec"
 alias bui="bundle install"
+
+# ruby
 alias rc="rails console"
 alias rg="rails generate"
 alias rn="rails new"
