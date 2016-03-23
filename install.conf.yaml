@@ -2,11 +2,13 @@
     link:
       relink: true
 
-- clean: ["~"]
+- clean: ["~", "~/.config"]
 
 - link:
-    ~/.gemrc: ".gemrc"
-    ~/.gitconfig: ".gitconfig"
+    ~/.config/omf: "omf"
+
+    ~/.gemrc: "gemrc"
+    ~/.gitconfig: "gitconfig"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
