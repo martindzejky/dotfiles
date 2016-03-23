@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.dotfiles: ""
+
+    ~/.bash_aliases: ".bash_aliases"
+    ~/.bash_colors: ".bash_colors"
+    ~/.bash_exports: ".bash_exports"
+    ~/.bash_prompt: ".bash_prompt"
+    ~/.bashrc: ".bashrc"
+
+    ~/.gitconfig: ".gitconfig"
+    ~/.vimrc: ".vimrc"
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
