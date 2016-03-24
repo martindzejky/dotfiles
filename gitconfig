@@ -10,3 +10,21 @@
 [color]
   diff = auto
   ui = auto
+[alias]
+  a = add
+  aa = add --all
+  b = branch
+  co = commit
+  coa = commit --amend
+  ce = checkout
+  d = diff
+  f = fetch
+  l = log
+  ps = push
+  pl = pull
+  rb = rebase
+  rbi = rebase -i
+  rs = reset
+  rsh = reset --hard
+  s = status
+
