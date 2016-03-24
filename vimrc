@@ -3,7 +3,6 @@ set backspace=indent,eol,start
 set linebreak
 set number
 set ruler
-set showbreak=">>> "
 set showmatch
 set textwidth=100
 set undolevels=1000
