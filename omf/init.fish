@@ -30,3 +30,8 @@ alias g git
 alias gu gulp
 alias r rails
 
+## RBENV
+
+set -gx PATH $PATH ~/.rbenv/bin ~/.rbenv/shims
+rbenv rhash > /dev/null ^&1
+
