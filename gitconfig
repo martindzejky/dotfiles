@@ -13,6 +13,8 @@
 [alias]
   a = add
   aa = add --all
+  aaco = !git add --all && git commit
+  aacoa = ~git add --all && git commit --amend
   b = branch
   co = commit
   coa = commit --amend
