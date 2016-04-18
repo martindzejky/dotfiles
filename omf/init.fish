@@ -24,12 +24,11 @@ alias lla "ls -AlF"
 alias lal lla
 
 # apps
+alias a  atom
 alias bo bower
 alias bu bundler
 alias g  git
 alias gu gulp
-alias no node
-alias np npm
 alias r  rails
 
 ## RBENV
