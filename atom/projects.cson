@@ -1,0 +1,10 @@
+chuckelesme:
+  title: "Chuckeles"
+  paths: [
+    "/home/chuckeles/Projects/chuckeles.me"
+  ]
+serioustodo:
+  title: "Serious Todo"
+  paths: [
+    "/home/chuckeles/Projects/SeriousTodo"
+  ]

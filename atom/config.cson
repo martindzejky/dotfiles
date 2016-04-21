@@ -1,0 +1,155 @@
+"*":
+  "atom-beautify":
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript:
+      default_beautifier: "Coffee Formatter"
+      end_with_newline: true
+      indent_size: 2
+    cpp: {}
+    cs: {}
+    css:
+      align_assignments: true
+      convert_quotes: "double"
+      default_beautifier: "Pretty Diff"
+      indent_size: 2
+      no_lead_zero: true
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "c0642d70-c350-4438-9093-a81c5093a59e"
+    gherkin: {}
+    handlebars: {}
+    html:
+      end_with_newline: true
+      indent_size: 2
+      wrap_attributes_indent_size: 2
+    jade: {}
+    java: {}
+    js:
+      end_with_newline: true
+      indent_size: 2
+    json:
+      end_with_newline: true
+      indent_size: 2
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python:
+      indent_size: 2
+      sort_imports: true
+    riot: {}
+    ruby:
+      indent_size: 2
+    rust: {}
+    sass:
+      align_assignments: true
+      convert_quotes: "double"
+      default_beautifier: "CSScomb"
+      indent_comments: false
+      indent_size: 2
+      no_lead_zero: true
+    scss:
+      align_assignments: true
+      convert_quotes: "double"
+      indent_size: 2
+      no_lead_zero: true
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
+  "atom-typescript":
+    preferredQuoteCharacter: "\""
+  "autocomplete-python": {}
+  "autocomplete-ruby": {}
+  core:
+    disabledPackages: [
+      "background-tips"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "~/Projects"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  docblockr:
+    align_tags: "shallow"
+    param_description: false
+    return_description: false
+    simple_mode: true
+  editor:
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabType: "soft"
+  emmet: {}
+  "exception-reporting":
+    userId: "7d89a6da-7035-e2ad-d334-36b4f3731c76"
+  "highlight-selected": {}
+  jumpy: {}
+  "linter-cpplint": {}
+  "linter-erb": {}
+  "linter-gcc": {}
+  "linter-pep8": {}
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: false
+      linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "project-manager":
+    closeCurrent: true
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+".asm.hex8.source":
+  editor:
+    preferredLineLength: 150
+".asm.source.x86":
+  editor:
+    preferredLineLength: 150
+".asm.source.x86_64":
+  editor:
+    preferredLineLength: 150
+".css.source":
+  editor:
+    preferredLineLength: 150
+".objdump.x86asm":
+  editor:
+    preferredLineLength: 150
+".rspec.ruby.source":
+  editor:
+    preferredLineLength: 150
+".slim.text":
+  editor:
+    preferredLineLength: 120
+".source.ts":
+  editor:
+    preferredLineLength: 120
+".source.tsx":
+  editor:
+    preferredLineLength: 120
+".source.x86asm":
+  editor:
+    preferredLineLength: 150
