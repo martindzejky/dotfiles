@@ -34,5 +34,5 @@ alias r  rails
 ## RBENV
 
 set -gx PATH $PATH ~/.rbenv/bin ~/.rbenv/shims
-rbenv rhash > /dev/null ^&1
+rbenv rehash > /dev/null
 
