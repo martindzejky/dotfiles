@@ -31,8 +31,7 @@ alias g  git
 alias gu gulp
 alias r  rails
 
-## RBENV
+# GEM
 
-set -gx PATH $PATH ~/.rbenv/bin ~/.rbenv/shims
-rbenv rehash > /dev/null
+set -gx PATH $PATH ~/.gem/ruby/2.3.0/bin
 
