@@ -21,7 +21,7 @@
   ce = checkout
   d = diff
   f = fetch
-  l = log
+  l = log --graph --decorate --all
   ps = push
   pl = pull
   rb = rebase
