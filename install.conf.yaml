@@ -2,19 +2,12 @@
     link:
       relink: true
 
-- clean: ["~", "~/.atom", "~/.config"]
+- clean: ["~", "~/.config"]
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.atom/config.cson: "atom/config.cson"
-    ~/.atom/init.coffee: "atom/init.coffee"
-    ~/.atom/keymap.cson: "atom/keymap.cson"
-    ~/.atom/packages.cson: "atom/packages.cson"
-    ~/.atom/projects.cson: "atom/projects.cson"
-    ~/.atom/snippets.cson: "atom/snippets.cson"
-    ~/.atom/styles.less: "atom/styles.less"
     ~/.config/omf: "omf"
     ~/.gemrc: "gemrc"
     ~/.gitconfig: "gitconfig"
