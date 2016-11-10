@@ -1,12 +1,11 @@
 [user]
   name = Martin Jakubik
   email = martin@jakubik.info
-[github]
-  user = chuckeles
 [push]
   default = simple
 [core]
   editor = vim
+  excludesfile = /Users/chuckeles/.gitignore_global
 [color]
   diff = auto
   ui = auto
@@ -16,15 +15,23 @@
   aaco = !git add --all && git commit
   aacoa = !git add --all && git commit --amend
   b = branch
+  cl = clone
   co = commit
   coa = commit --amend
   ce = checkout
+  cp = cherry-pick
   d = diff
   f = fetch
   l = log --graph --decorate --all --pretty=oneline --abbrev-commit
+  m = merge
+  mff = merge --ff-only
+  mnff = merge --no-ff
   ps = push
   pl = pull
+  plr = pull --rebase
   rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
   rbi = rebase -i
   rs = reset
   rsh = reset --hard

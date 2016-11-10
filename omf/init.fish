@@ -29,9 +29,11 @@ alias bo bower
 alias bu bundler
 alias g  git
 alias gu gulp
-alias r  rails
+alias ra rails
 
-# GEM
+# GEMS
 
-set -gx PATH $PATH ~/.gem/ruby/2.3.0/bin
+if test -d ~/.gem/ruby/2.3.0/bin
+  set -gx PATH $PATH ~/.gem/ruby/2.3.0/bin
+end
 
