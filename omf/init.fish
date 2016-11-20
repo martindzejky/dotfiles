@@ -27,6 +27,7 @@ alias lal lla
 alias a  atom
 alias bo bower
 alias bu bundler
+alias d  docker
 alias g  git
 alias gu gulp
 alias ra rails
