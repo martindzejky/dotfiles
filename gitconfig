@@ -18,6 +18,7 @@
   cl = clone
   co = commit
   coa = commit --amend
+  count = !git ls-files | xargs wc -l
   ce = checkout
   cp = cherry-pick
   d = diff
