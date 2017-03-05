@@ -9,6 +9,9 @@ set -gx MANPAGER $PAGER
 # fish greeting
 set -gx fish_greeting ""
 
+# thefuck
+thefuck --alias | source
+
 ## LOCALE
 
 set -gx LC_ALL en_US.UTF-8
@@ -41,5 +44,22 @@ alias ra rails
 
 if test -d ~/.gem/ruby/2.3.0/bin
   set -gx PATH $PATH ~/.gem/ruby/2.3.0/bin
+end
+
+# NODE
+
+if which yarn > /dev/null
+  set -gx PATH $PATH (yarn global bin)
+end
+
+# ANDROID
+
+set -gx JAVA_HOME /Library/Java/Home
+set -gx ANDROID_HOME /usr/local/opt/android-sdk
+
+# PIP
+
+if test -d ~/.local/bin
+  set -gx PATH $PATH ~/.local/bin
 end
 
