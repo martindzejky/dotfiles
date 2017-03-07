@@ -17,10 +17,10 @@ set smartcase
 " indentation
 set autoindent
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set smartindent
 set smarttab
-set softtabstop=2
+set softtabstop=4
 
 " colors
 syntax enable
