@@ -63,3 +63,9 @@ if test -d ~/.local/bin
   set -gx PATH $PATH ~/.local/bin
 end
 
+# POSTGRES
+
+if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
+  set PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
+end
+
