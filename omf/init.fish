@@ -55,7 +55,8 @@ end
 # ANDROID
 
 set -gx JAVA_HOME /Library/Java/Home
-set -gx ANDROID_HOME /usr/local/opt/android-sdk
+set -gx ANDROID_HOME /usr/local/share/android-sdk
+set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
 
 # PIP
 
