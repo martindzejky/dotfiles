@@ -15,9 +15,12 @@
   aaco = !git add --all && git commit
   aacoa = !git add --all && git commit --amend
   b = branch
+  bs = bisect
   bsb = bisect bad
   bsg = bisect good
+  bsl = bisect log
   bss = bisect start
+  bsv = bisect view
   cl = clone
   co = commit
   coa = commit --amend
