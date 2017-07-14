@@ -4,8 +4,7 @@ My personal dotfiles. So it always feels like $HOME...
 
 ## Installation
 
-1. First, install Python, [Fish shell](https://fishshell.com) and [Oh my
-fish](https://github.com/oh-my-fish/oh-my-fish). 
+1. First, install Python, [Fish shell](https://fishshell.com), [Oh my fish](https://github.com/oh-my-fish/oh-my-fish), and [Thefuck](https://github.com/nvbn/thefuck).
 2. Clone the repository and `./install` the aliases.
 3. Then, run `omf install` and `omf theme agnoster`.
 
