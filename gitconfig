@@ -35,6 +35,7 @@
   mff = merge --ff-only
   mnff = merge --no-ff
   ps = push
+  pst = push --tags
   pl = pull
   plr = pull --rebase
   rb = rebase
