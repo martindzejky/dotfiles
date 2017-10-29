@@ -18,3 +18,7 @@
     ~/.vimrc: 'vimrc'
     ~/.z.sh: 'z/z.sh'
 
+- shell:
+    - [omf install, Installing OMF packages]
+    - [omf theme agnoster, Setting OMF theme]
+
