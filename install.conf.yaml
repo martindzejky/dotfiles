@@ -1,17 +1,17 @@
 - defaults:
     link:
-      relink: true
+        relink: true
 
-- clean: ["~", "~/.config"]
+- clean: ['~', '~/.config']
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.config/omf: "omf"
-    ~/.gemrc: "gemrc"
-    ~/.gitconfig: "gitconfig"
-    ~/.vim: "vim"
-    ~/.vimrc: "vimrc"
-    ~/.z.sh: "z/z.sh"
+    ~/.config/omf: 'omf'
+    ~/.gemrc: 'gemrc'
+    ~/.gitconfig: 'gitconfig'
+    ~/.vim: 'vim'
+    ~/.vimrc: 'vimrc'
+    ~/.z.sh: 'z/z.sh'
 
