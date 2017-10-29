@@ -39,6 +39,7 @@ alias d  docker
 alias g  git
 alias gu gulp
 alias ra rails
+alias w  webpack
 
 # GEMS
 

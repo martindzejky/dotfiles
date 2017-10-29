@@ -1,52 +1,56 @@
 [user]
-  name = Martin Jakubik
-  email = martin@jakubik.info
+    name = Martin Jakubik
+    email = martin@jakubik.info
+
 [push]
-  default = simple
+    default = simple
+
 [core]
-  editor = vim
-  excludesfile = /Users/chuckeles/.gitignore_global
+    editor = vim
+    excludesfile = /Users/chuckeles/.gitignore_global
+
 [color]
-  diff = auto
-  ui = auto
+    diff = auto
+    ui = auto
+
 [alias]
-  a = add
-  aa = add --all
-  aaco = !git add --all && git commit
-  aacoa = !git add --all && git commit --amend
-  b = branch
-  bs = bisect
-  bsb = bisect bad
-  bsg = bisect good
-  bsl = bisect log
-  bss = bisect start
-  bsv = bisect view
-  cl = clone
-  co = commit
-  coa = commit --amend
-  count = !git ls-files | xargs wc -l
-  ce = checkout
-  cp = cherry-pick
-  d = diff
-  ds = diff --stat
-  f = fetch
-  l = log --graph --decorate --all --pretty=oneline --abbrev-commit
-  m = merge
-  mff = merge --ff-only
-  mnff = merge --no-ff
-  ps = push
-  pst = push --follow-tags
-  pl = pull
-  plr = pull --rebase
-  rb = rebase
-  rba = rebase --abort
-  rbc = rebase --continue
-  rbi = rebase -i
-  rs = reset
-  rsh = reset --hard
-  s = status
-  su = submodule
-  sua = submodule add
-  suur = submodule update --remote
-  suui = submodule update --init --recursive
+    a = add
+    aa = add --all
+    aaco = !git add --all && git commit
+    aacoa = !git add --all && git commit --amend
+    b = branch
+    bs = bisect
+    bsb = bisect bad
+    bsg = bisect good
+    bsl = bisect log
+    bss = bisect start
+    bsv = bisect view
+    cl = clone
+    co = commit
+    coa = commit --amend
+    count = !git ls-files | xargs wc -l
+    ce = checkout
+    cp = cherry-pick
+    d = diff
+    ds = diff --stat
+    f = fetch
+    l = log --graph --decorate --all --pretty=oneline --abbrev-commit
+    m = merge
+    mff = merge --ff-only
+    mnff = merge --no-ff
+    ps = push
+    pst = push --follow-tags
+    pl = pull
+    plr = pull --rebase
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase -i
+    rs = reset
+    rsh = reset --hard
+    s = status
+    su = submodule
+    sua = submodule add
+    suur = submodule update --remote
+    suui = submodule update --init --recursive
 
