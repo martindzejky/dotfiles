@@ -13,6 +13,7 @@
     ~/.config/omf: 'omf'
     ~/.gemrc: 'gemrc'
     ~/.gitconfig: 'gitconfig'
+    ~/.ssh/config: 'ssh'
     ~/.vim: 'vim'
     ~/.vimrc: 'vimrc'
     ~/.z.sh: 'z/z.sh'
