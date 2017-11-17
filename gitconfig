@@ -54,3 +54,6 @@
     suur = submodule update --remote
     suui = submodule update --init --recursive
 
+[includeIf "gitdir:~/Projects/Work/"]
+    path = .gitconfig-work
+

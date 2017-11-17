@@ -13,6 +13,7 @@
     ~/.config/omf: 'omf'
     ~/.gemrc: 'gemrc'
     ~/.gitconfig: 'gitconfig'
+    ~/.gitconfig-work: 'gitconfig-work'
     ~/.ssh/config: 'ssh'
     ~/.tmux.conf: 'tmux.conf'
     ~/.vim: 'vim'
