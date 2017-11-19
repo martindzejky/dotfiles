@@ -40,6 +40,7 @@ alias g  git
 alias gu gulp
 alias ra rails
 alias w  webpack
+alias y  yarn
 
 # GEMS
 
