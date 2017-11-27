@@ -16,6 +16,7 @@
 [alias]
     a = add
     aa = add --all
+    aacz = !git add --all && git cz
     aaco = !git add --all && git commit
     aacoa = !git add --all && git commit --amend
     b = branch
