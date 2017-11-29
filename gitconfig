@@ -34,7 +34,7 @@
     cp = cherry-pick
     d = diff
     ds = diff --stat
-    f = fetch
+    f = fetch --prune
     l = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
     mff = merge --ff-only
