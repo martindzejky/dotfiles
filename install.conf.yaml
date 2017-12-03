@@ -15,10 +15,8 @@
     ~/.gitconfig: 'gitconfig'
     ~/.gitconfig-work: 'gitconfig-work'
     ~/.ssh/config: 'ssh'
-    ~/.tmux.conf: 'tmux.conf'
     ~/.vim: 'vim'
     ~/.vimrc: 'vimrc'
-    ~/.z.sh: 'z/z.sh'
 
 - shell:
     - [omf install, Installing OMF packages]

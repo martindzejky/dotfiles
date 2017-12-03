@@ -42,32 +42,24 @@ alias ra rails
 alias w  webpack
 alias y  yarn
 
-# GEMS
+# PATH
 
-if test -d ~/.gem/ruby/2.3.0/bin
-  set -gx PATH $PATH ~/.gem/ruby/2.3.0/bin
-end
-
-# NODE
-
+# node
 if which yarn > /dev/null
   set -gx PATH $PATH (yarn global bin)
 end
 
-# ANDROID
-
+# android
 set -gx JAVA_HOME /Library/Java/Home
 set -gx ANDROID_HOME /usr/local/share/android-sdk
 set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
 
-# PIP
-
+# pip
 if test -d ~/.local/bin
   set -gx PATH $PATH ~/.local/bin
 end
 
-# POSTGRES
-
+# postgres
 if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
   set PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
 end
