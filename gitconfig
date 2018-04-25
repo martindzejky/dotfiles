@@ -57,6 +57,8 @@
     st = stash
     stp = stash pop
 
+    last = show --name-only
+
 [includeIf "gitdir:~/Projects/Work/"]
     path = .gitconfig-work
 
