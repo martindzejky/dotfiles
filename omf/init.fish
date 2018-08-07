@@ -38,6 +38,8 @@ alias bu bundler
 alias d  docker
 alias g  git
 alias gu gulp
+alias k  kubectl
+alias kc 'set ARG (kubectl config get-contexts -o=name | fzf); if begin; test -n $ARG; end kubectl config use-context $ARG; end'
 alias ra rails
 alias w  webpack
 alias y  yarn
