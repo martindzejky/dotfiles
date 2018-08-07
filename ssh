@@ -1,26 +1,6 @@
-# KNOWN HOSTS
+# GLOBALS
 
-host exponea.com
-    user mjakubik
-
-host free-dev.exponea.com
-    hostname free-dev.exponea.com
-    user mjakubik
-
-host free.exponea.com
-    hostname exp-free-prod-public-0.exponea.com
-    user mjakubik
-
-# DEFAULTS
-
-host *
-    user chuckeles
-    PubKeyAuthentication yes
-    IdentityFile ~/.ssh/id_rsa
-
-# COPY DOTFILES
-
-# TODO
-# http://klaig.blogspot.co.at/2013/04/make-your-dotfiles-follow-you.html
-# https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#automatically-install-or-update-dotfiles-when-sshing-into-a-remote-machine-or-let-my-dotfiles-follow-me
+User chuckeles
+ForwardAgent yes
+StrictHostKeyChecking no
 

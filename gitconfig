@@ -8,6 +8,7 @@
 [core]
     editor = vim
     excludesfile = /Users/chuckeles/.gitignore_global
+    ignorecase = false
 
 [color]
     diff = auto
@@ -59,6 +60,6 @@
 
     last = show --name-only
 
-[includeIf "gitdir:~/Projects/Work/"]
+[includeIf "gitdir:~/projects/work/"]
     path = .gitconfig-work
 
