@@ -3,7 +3,7 @@
     email = martin@jakubik.info
 
 [push]
-    default = simple
+    default = current
 
 [core]
     editor = vim
