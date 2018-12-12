@@ -30,12 +30,12 @@
     cl = clone
     co = commit
     coa = commit --amend
-    count = !git ls-files | xargs wc -l
     ce = checkout
     cp = cherry-pick
     d = diff
     ds = diff --stat
     f = fetch --prune
+    fpl = !git fetch --prune && git pull
     l = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
     mff = merge --ff-only
@@ -50,6 +50,7 @@
     rbi = rebase -i
     rs = reset
     rsh = reset --hard
+    rss = reset --soft
     s = status
     su = submodule
     sua = submodule add
@@ -58,6 +59,7 @@
     st = stash
     stp = stash pop
 
+    count = !git ls-files | xargs wc -l
     last = show --name-only
 
 [includeIf "gitdir:~/projects/work/"]
