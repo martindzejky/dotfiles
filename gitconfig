@@ -1,6 +1,7 @@
 [user]
     name = Martin Jakubik
     email = martin@jakubik.info
+    signingkey = F200041E8203937E
 
 [push]
     default = current
