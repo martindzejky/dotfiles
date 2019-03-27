@@ -46,9 +46,14 @@ alias y  yarn
 
 # PATH
 
-# node
+# node/nvm
+if test -d ~/.nvm
+    set -gx NVM_DIR ~/.nvm
+end
+
+# yarn
 if which yarn > /dev/null
-  set -gx PATH $PATH (yarn global bin)
+    set -gx PATH $PATH (yarn global bin)
 end
 
 # android
@@ -58,11 +63,11 @@ set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
 
 # pip
 if test -d ~/.local/bin
-  set -gx PATH $PATH ~/.local/bin
+    set -gx PATH $PATH ~/.local/bin
 end
 
 # postgres
 if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
-  set PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
+    set PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
 end
 
