@@ -1,3 +1,6 @@
+[commit]
+    gpgsign = true
+
 [user]
     name = Martin Jakubik
     email = martin.jakubik@exponea.com
