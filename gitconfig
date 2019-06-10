@@ -1,7 +1,7 @@
 [user]
     name = Martin Jakubik
-    email = martin@jakubik.info
-    signingkey = F200041E8203937E
+    email = martin.jakubik@exponea.com
+    signingKey = 04694F986FD761AFC03245FC3E8024ECD351177C
 
 [push]
     default = current
@@ -18,7 +18,7 @@
 [alias]
     a = add
     aa = add --all
-    aacz = !git add --all && git cz
+    aacz = !git add --all && git commit
     aaco = !git add --all && git commit
     aacoa = !git add --all && git commit --amend
     b = branch

@@ -6,3 +6,9 @@
     email = martin.jakubik@exponea.com
     signingkey = 3E8024ECD351177C
 
+[gpg]
+    program = gpg
+
+[tag]
+    forceSignAnnotated = false
+
