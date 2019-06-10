@@ -68,6 +68,10 @@ end
 
 # postgres
 if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
-    set PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
+    set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
 end
+
+# NODE
+
+set -gx NODE_OPTIONS "--max_old_space_size=4096"
 
