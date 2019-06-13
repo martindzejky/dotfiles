@@ -43,6 +43,7 @@
     mnff = merge --no-ff
     ps = push
     pst = push --tags
+    psf = push --force-with-lease
     pl = pull
     plr = pull --rebase
     rb = rebase
