@@ -24,6 +24,6 @@ set softtabstop=4
 
 " colors
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 
