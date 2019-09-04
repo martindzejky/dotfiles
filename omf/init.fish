@@ -61,6 +61,10 @@ set -gx JAVA_HOME (/usr/libexec/java_home)
 set -gx ANDROID_HOME /usr/local/share/android-sdk
 set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
 
+if test -d $ANDROID_HOME/platform-tools
+    set -gx PATH $PATH "$ANDROID_HOME/platform-tools"
+end
+
 # pip
 if test -d ~/.local/bin
     set -gx PATH $PATH ~/.local/bin
