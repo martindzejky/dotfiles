@@ -57,7 +57,7 @@ if which yarn > /dev/null
 end
 
 # android
-set -gx JAVA_HOME /Library/Java/Home
+set -gx JAVA_HOME (/usr/libexec/java_home)
 set -gx ANDROID_HOME /usr/local/share/android-sdk
 set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
 
