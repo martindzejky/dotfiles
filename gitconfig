@@ -30,7 +30,8 @@
     bsv = bisect view
     cl = clone
     co = commit
-    coa = commit --amend
+    coa = commit --amend --no-edit
+    coae = commit --amend
     ce = checkout
     cp = cherry-pick
     d = diff
