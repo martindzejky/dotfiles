@@ -1,38 +1,48 @@
 # default settings for linking
-- defaults:
-    link:
-        create: true
-        force: true
-        relink: true
+-   defaults:
+        link:
+            create: true
+            force: true
+            relink: true
 
 # start by cleaning existing configurations
-- clean:
-  - '~'
-  - '~/.config'
+-   clean:
+        - '~'
+        - '~/.config'
 
 # update git submodules
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
+-   shell:
+        - [git submodule update --init --recursive, Installing submodules]
 
 # link configuration files
-- link:
-    # shell
-    ~/.config/omf: omf
-    ~/.ssh/config: ssh/config
+-   link:
+        # shell
+        ~/.config/omf: omf
+        ~/.ssh/config: ssh/config
 
-    # ruby
-    ~/.gemrc: ruby/gemrc
+        # ruby
+        ~/.gemrc: ruby/gemrc
 
-    # git
-    ~/.gitconfig: git/gitconfig
-    ~/.gitconfig-work: git/gitconfig-work
+        # git
+        ~/.gitconfig: git/gitconfig
+        ~/.gitconfig-work: git/gitconfig-work
 
-    # vim
-    ~/.vim: vim/config
-    ~/.vimrc: vim/vimrc
+        # vim
+        ~/.vim: vim/config
+        ~/.vimrc: vim/vimrc
 
 # set up OMF
-- shell:
-    - [omf install, Installing OMF packages]
-    - [omf theme agnoster, Setting OMF theme to agnoster]
+-   shell:
+        - [omf install, Installing OMF packages]
+        - [omf theme agnoster, Setting OMF theme to agnoster]
 
+# set up the home directory structure
+-   create:
+        - projects
+        - projects/work
+
+# install requirements
+-   shell:
+        - [scripts/install/brew.sh, Installing brew]
+        - [scripts/install/fish.sh, Installing fish shell]
+        - [scripts/install/omf.sh, Installing OMF]
