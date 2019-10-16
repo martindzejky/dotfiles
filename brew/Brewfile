@@ -5,6 +5,7 @@ tap "homebrew/cask-versions"
 brew "git"
 brew "git-lfs"
 brew "gnupg"
+brew "mas"
 brew "pinentry-mac"
 brew "python"
 brew "python@2"
@@ -15,3 +16,5 @@ brew "isacikgoz/gitin/gitin"
 
 cask "adoptopenjdk8"
 cask "android-sdk"
+
+mas "1Password", id: 1333542190
