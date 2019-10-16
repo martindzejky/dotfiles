@@ -31,18 +31,25 @@
         ~/.vim: vim/config
         ~/.vimrc: vim/vimrc
 
-# set up OMF
--   shell:
-        - [omf install, Installing OMF packages]
-        - [omf theme agnoster, Setting OMF theme to agnoster]
-
 # set up the home directory structure
 -   create:
         - projects
         - projects/work
 
-# install requirements
+# install fish shell
+-   brew:
+        - fish
+
+# set fish shell as the default shell
 -   shell:
-        - [scripts/install/brew.sh, Installing brew]
-        - [scripts/install/fish.sh, Installing fish shell]
+        - [chsh -s $(which fish), Setting fish shell as the default]
+
+# set up OMF
+-   shell:
         - [scripts/install/omf.sh, Installing OMF]
+        - [omf install, Installing OMF packages]
+        - [omf theme agnoster, Setting OMF theme to agnoster]
+
+# install brew packages
+- brewfile:
+      - brew/Brewfile

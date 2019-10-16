@@ -2,12 +2,12 @@
 
 # installs oh my fish shell (OMF) if it is not installed yet
 
-if which omf; then
-    echo "oh my fish shell is already installed"
-    exit 0
-elif ! which fish; then
+if ! which fish; then
     echo "fish shell not installed!"
     exit 1
+elif fish -c "omf > /dev/null"; then
+    echo "oh my fish shell is already installed"
+    exit 0
 else
     # copied from https://github.com/oh-my-fish/oh-my-fish
 
