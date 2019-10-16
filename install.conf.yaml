@@ -1,24 +1,38 @@
+# default settings for linking
 - defaults:
     link:
         create: true
         force: true
         relink: true
 
-- clean: ['~', '~/.config']
+# start by cleaning existing configurations
+- clean:
+  - '~'
+  - '~/.config'
 
+# update git submodules
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
+# link configuration files
 - link:
-    ~/.config/omf: 'omf'
-    ~/.gemrc: 'gemrc'
-    ~/.gitconfig: 'gitconfig'
-    ~/.gitconfig-work: 'gitconfig-work'
-    ~/.ssh/config: 'ssh'
-    ~/.vim: 'vim'
-    ~/.vimrc: 'vimrc'
+    # shell
+    ~/.config/omf: omf
+    ~/.ssh/config: ssh/config
 
+    # ruby
+    ~/.gemrc: ruby/gemrc
+
+    # git
+    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig-work: git/gitconfig-work
+
+    # vim
+    ~/.vim: vim/config
+    ~/.vimrc: vim/vimrc
+
+# set up OMF
 - shell:
     - [omf install, Installing OMF packages]
-    - [omf theme agnoster, Setting OMF theme]
+    - [omf theme agnoster, Setting OMF theme to agnoster]
 
