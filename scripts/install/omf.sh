@@ -5,7 +5,7 @@
 if ! which fish; then
     echo "fish shell not installed!"
     exit 1
-elif fish -c "omf > /dev/null"; then
+elif fish -c omf > /dev/null; then
     echo "oh my fish shell is already installed"
     exit 0
 else
