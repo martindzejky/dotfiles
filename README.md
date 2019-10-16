@@ -1,12 +1,19 @@
 # .dotfiles
 
-My personal dotfiles. So it always feels like $HOME...
+My personal dotfiles. So it always feels like `$HOME`...
 
 ## Installation
 
-1. First, install Python, [Fish shell](https://fishshell.com), [Oh my fish](https://github.com/oh-my-fish/oh-my-fish), and [Thefuck](https://github.com/nvbn/thefuck).
-2. Clone the repository and `./install` the aliases.
+Almost everything is automated thanks to a bunch of scripts and [dotbot](https://github.com/anishathalye/dotbot).
+Just clone this repository and run the install script:
 
-Make sure to install and use a [Powerline-patched font](https://github.com/powerline/fonts) for the
-agnoster theme to work.
+```
+git clone https://github.com/martindzejky/dotfiles ~/.dotfiles
+cd ~/.dotfiles
+./install
+```
 
+### Manual steps
+
+Make sure to install and use a [Powerline-patched font](https://github.com/powerline/fonts) or
+for the any font with powerline symbols for the [agnoster theme](https://github.com/oh-my-fish/theme-agnoster) to work.
