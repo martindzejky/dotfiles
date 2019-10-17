@@ -18,3 +18,5 @@ cask "adoptopenjdk8"
 cask "android-sdk"
 
 mas "1Password", id: 1333542190
+mas "BetterSnapTool", id: 417375580
+mas "Todoist", id: 585829637
