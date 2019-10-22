@@ -34,6 +34,9 @@
         # hyper
         ~/.hyper.js: hyper/hyper.js
 
+        # karabiner
+        ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
+
 # set up the home directory structure
 -   create:
         - projects
