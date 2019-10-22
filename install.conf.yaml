@@ -31,6 +31,9 @@
         ~/.vim: vim/config
         ~/.vimrc: vim/vimrc
 
+        # hyper
+        ~/.hyper.js: hyper/hyper.js
+
 # set up the home directory structure
 -   create:
         - projects
