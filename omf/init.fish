@@ -9,9 +9,6 @@ set -gx MANPAGER $PAGER
 # fish greeting
 set -gx fish_greeting ""
 
-# thefuck
-thefuck --alias | source
-
 ## LOCALE
 
 set -gx LC_ALL en_US.UTF-8

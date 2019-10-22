@@ -36,19 +36,29 @@
         - projects
         - projects/work
 
-# install fish shell
--   brew:
-        - fish
-
-# set fish shell as the default shell
+# install brew (automatic install does not work)
 -   shell:
-        - [chsh -s $(which fish), Setting fish shell as the default]
+        - command: scripts/install/brew.sh
+          description: Install brew
+          stdout: true
+
+# install fish shell
+-   shell:
+        - command: scripts/install/fish.sh
+          description: Install fish shell
+          stdout: true
 
 # set up OMF
 -   shell:
-        - [scripts/install/omf.sh, Installing OMF]
-        - [omf install, Installing OMF packages]
-        - [omf theme agnoster, Setting OMF theme to agnoster]
+        - command: scripts/install/omf.sh
+          description: Installing OMF
+          stdout: true
+        - command: fish -c "omf install"
+          description: Installing OMF packages
+          stdout: true
+        - command: fish -c "omf theme agnoster"
+          description: Setting OMF theme to agnoster
+          stdout: true
 
 # install brew packages
 - brewfile:

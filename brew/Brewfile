@@ -11,6 +11,9 @@ brew "python"
 brew "python@2"
 brew "yarn"
 
+cask "hyper"
+cask "karabiner-elements"
+
 brew "denisidoro/tools/navi"
 brew "isacikgoz/gitin/gitin"
 
