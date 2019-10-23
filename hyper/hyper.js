@@ -3,8 +3,8 @@ module.exports = {
   config: {
     updateChannel: 'stable',
 
-    fontSize: 16,
-    fontFamily: '"Dank Mono", "Roboto Mono for Powerline", monospace',
+    fontSize: 14,
+    fontFamily: '"Dank Mono", "Roboto Mono for Powerline", Menlo, DejaVu Sans Mono, Lucida Console, monospace',
     fontWeight: 'normal',
     fontWeightBold: 'bold',
     lineHeight: 1.2,
