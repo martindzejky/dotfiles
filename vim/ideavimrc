@@ -1,6 +1,12 @@
 source ~/.vimrc
 
+" enable built-in ideavim plugins
 set easymotion
 set surround
 set multiple-cursors
+
+" settings
+set ideamarks
+set idearefactormode visual
+set showmode
 
