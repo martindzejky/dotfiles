@@ -30,6 +30,7 @@
         # vim
         ~/.vim: vim/config
         ~/.vimrc: vim/vimrc
+        ~/.ideavimrc: vim/ideavimrc
 
         # hyper
         ~/.hyper.js: hyper/hyper.js

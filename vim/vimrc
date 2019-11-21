@@ -27,3 +27,7 @@ syntax enable
 set background=light
 colorscheme solarized
 
+" disable q: and Q
+map q: <Nop>
+nnoremap Q <nop>
+
