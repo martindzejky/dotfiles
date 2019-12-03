@@ -36,7 +36,7 @@ module.exports = {
     }
   },
 
-  plugins: ["hyper-solarized-light", "hypercwd", "hyper-pane"],
+  plugins: ["hypercwd", "hyper-pane", "hyperminimal", "hyper-solarized-light"],
 
   keymaps: {
     'tab:next': [
