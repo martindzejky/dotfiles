@@ -10,3 +10,12 @@ set ideamarks
 set idearefactormode visual
 set showmode
 
+" mappings
+map <C-w>x :action ChangeSplitOrientation<Enter>
+
+" remap conflicting keymaps for multiple-cursors plugin
+map <C-N> <A-N>
+map <C-P> <A-P>
+map <C-X> <A-X>
+map g<C-N> g<A-N>
+
