@@ -37,6 +37,7 @@
     cp = cherry-pick
     d = diff
     ds = diff --stat
+    de = describe --tags
     f = fetch --prune
     fpl = !git fetch --prune && git pull
     l = !gitin log --tags
