@@ -22,7 +22,7 @@
     aaco = !git add --all && git commit
     aacoa = !git add --all && git commit --amend --no-edit
     aacoae = !git add --all && git commit --amend
-    b = branch
+    b = !gitin branch
     bs = bisect
     bsb = bisect bad
     bsg = bisect good
@@ -39,7 +39,8 @@
     ds = diff --stat
     f = fetch --prune
     fpl = !git fetch --prune && git pull
-    l = log --graph --decorate --all --pretty=oneline --abbrev-commit
+    l = !gitin log --tags
+    ll = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
     mff = merge --ff-only
     mnff = merge --no-ff
@@ -55,13 +56,14 @@
     rs = reset
     rsh = reset --hard
     rss = reset --soft
-    s = status
+    s = !gitin status
     su = submodule
     sua = submodule add
     suur = submodule update --remote
     suui = submodule update --init --recursive
     st = stash
     stp = stash pop
+    t = tag
 
     count = !git ls-files | xargs wc -l
     last = show --name-only
