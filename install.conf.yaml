@@ -17,6 +17,7 @@
 # link configuration files
 -   link:
         # shell
+        ~/.config/fish/functions: fish/functions
         ~/.config/omf: omf
         ~/.ssh/config: ssh/config
 
