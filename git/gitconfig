@@ -46,6 +46,7 @@
     mff = merge --ff-only
     mnff = merge --no-ff
     ps = push
+    psu = push -u
     pst = push --tags
     psf = push --force-with-lease
     pl = pull
