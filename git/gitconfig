@@ -22,7 +22,8 @@
     aaco = !git add --all && git commit
     aacoa = !git add --all && git commit --amend --no-edit
     aacoae = !git add --all && git commit --amend
-    b = !gitin branch
+    b = branch
+    bb = !gitin branch
     bs = bisect
     bsb = bisect bad
     bsg = bisect good
