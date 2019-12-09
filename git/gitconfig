@@ -41,8 +41,9 @@
     de = describe --tags
     f = fetch --prune
     fpl = !git fetch --prune && git pull
-    l = !gitin log --tags
-    ll = log --graph --decorate --all --pretty=oneline --abbrev-commit
+    l = log --oneline
+    ll = !gitin log --tags
+    lg = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
     mff = merge --ff-only
     mnff = merge --no-ff
@@ -59,7 +60,8 @@
     rs = reset
     rsh = reset --hard
     rss = reset --soft
-    s = !gitin status
+    s = status
+    ss = !gitin status
     su = submodule
     sua = submodule add
     suur = submodule update --remote
