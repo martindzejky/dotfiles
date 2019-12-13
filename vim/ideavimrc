@@ -12,8 +12,9 @@ set showmode
 
 " mappings
 map <C-w>x :action ChangeSplitOrientation<Enter>
-map <C-c>l :action MTSolarizedLightTheme<Enter>
-map <C-c>d :action MTSolarizedDarkTheme<Enter>
+" these are mapped directly in Webstorm
+"map <C-c>l :action MTSolarizedLightTheme<Enter>
+"map <C-c>d :action MTSolarizedDarkTheme<Enter>
 
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
