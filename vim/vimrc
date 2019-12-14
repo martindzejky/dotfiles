@@ -1,3 +1,27 @@
+" https://github.com/changemewtf/no_plugins
+" enter the current millenium
+set nocompatible
+
+" enable syntax and plugins
+syntax enable
+filetype plugin on
+
+" file autocomplete with subfolders
+set path+=**
+set wildmenu
+
+" tweaks for the file browser
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+" the following settings are copied from somewhere and
+" are the default "sane" things to have in vimrc
+" (I guess)
+
 " general
 set backspace=indent,eol,start
 set linebreak
@@ -23,11 +47,13 @@ set smarttab
 set softtabstop=4
 
 " colors
-syntax enable
+" TODO: this should switch between solarized light and dark based
+" on the current OSX light/dark mode
 set background=light
 colorscheme solarized
 
-" disable q: and Q
+" disable q: and Q because I always press them
+" by mistake and I never actually use them
 map q: <Nop>
 nnoremap Q <nop>
 
