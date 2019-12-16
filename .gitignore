@@ -1,1 +1,10 @@
+# system files
+.DS_Store
+
+# IDEs and editors
 .idea
+
+# vim generated files
+# TODO: consider linking individual files instead of the whole dir
+vim/config/.netrwhist
+
