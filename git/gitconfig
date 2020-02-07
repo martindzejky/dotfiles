@@ -3,6 +3,9 @@
     email = martin.jakubik@exponea.com
     signingKey = 04694F986FD761AFC03245FC3E8024ECD351177C
 
+[gpg]
+    program = /usr/local/bin/gpg
+
 [push]
     default = current
 
