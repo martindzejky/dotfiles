@@ -47,13 +47,18 @@ set smarttab
 set softtabstop=4
 
 " colors
-" TODO: this should switch between solarized light and dark based
-" on the current OSX light/dark mode
-set background=light
 colorscheme solarized
 
 " disable q: and Q because I always press them
 " by mistake and I never actually use them
 map q: <Nop>
 nnoremap Q <nop>
+
+" automatically switch between light and dark theme based on
+" iTerm's theme (which is in turn based on OS)
+if $ITERM_PROFILE == "Dark"
+    set background=dark
+else
+    set background=light
+endif
 
