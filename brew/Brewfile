@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
+tap "homebrew/cask-fonts"
 
 brew "git"
 brew "git-lfs"
@@ -8,18 +9,18 @@ brew "gnupg"
 brew "mas"
 brew "pinentry-mac"
 brew "python"
-brew "python@2"
+brew "nvm"
 brew "yarn"
 
-cask "hyper"
+brew "iterm"
 cask "karabiner-elements"
 cask "google-chrome"
 
 brew "denisidoro/tools/navi"
 brew "isacikgoz/gitin/gitin"
-
 cask "adoptopenjdk8"
 cask "android-sdk"
+cask "font-jetbrains-mono"
 
 mas "1Password", id: 1333542190
 mas "BetterSnapTool", id: 417375580
