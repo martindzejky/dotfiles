@@ -12,7 +12,7 @@ brew "python"
 brew "nvm"
 brew "yarn"
 
-brew "iterm"
+cask "iterm2"
 cask "karabiner-elements"
 cask "google-chrome"
 
