@@ -1,5 +1,5 @@
 function is-os-dark-mode
-    set -l result (defaults read -g AppleInterfaceStyle 2>/dev/null)
-    return (test "$result" = "Dark")
+    set -l result (osascript -l JavaScript -e 'Application("System Events").appearancePreferences.darkMode()')
+    return (test "$result" = "true")
 end
 
