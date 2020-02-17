@@ -11,6 +11,7 @@ brew "pinentry-mac"
 brew "python"
 brew "nvm"
 brew "yarn"
+brew "nvim"
 
 cask "iterm2"
 cask "karabiner-elements"
