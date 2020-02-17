@@ -10,6 +10,9 @@ call plug#begin(stdpath('data') . '/plugged')
 " solarized colors with termguicolors support
 Plug 'lifepillar/vim-solarized8'
 
+" nerdtree for directory tree
+Plug 'preservim/nerdtree'
+
 " autocompletion
 " TODO: configure this from the docs
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
