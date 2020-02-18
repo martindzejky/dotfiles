@@ -1,3 +1,5 @@
+" --- GENERAL ---
+
 " https://github.com/changemewtf/no_plugins
 " enter the current millenium
 set nocompatible
@@ -46,13 +48,17 @@ set smartindent
 set smarttab
 set softtabstop=4
 
-" colors
-colorscheme solarized
+" coc configuration from https://github.com/neoclide/coc.nvim
+" TODO: what do these really do?
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
 
-" disable q: and Q because I always press them
-" by mistake and I never actually use them
-map q: <Nop>
-nnoremap Q <nop>
+" --- COLORS ---
 
 " automatically switch between light and dark theme based on
 " iTerm's theme (which is in turn based on OS)
@@ -61,4 +67,21 @@ if $ITERM_PROFILE == "Dark"
 else
     set background=light
 endif
+
+" use solarized colors <3
+colorscheme solarized
+
+" real men use true color support
+set termguicolors
+
+" --- KEYS ---
+
+" disable q: and Q because I always press them
+" by mistake and I never actually use them
+map q: <Nop>
+nnoremap Q <nop>
+
+" rebind CTRL+P to open fzf
+" TODO: can this be CMD+SHIFT+O?
+nnoremap <C-p> :FZF<CR>
 

@@ -4,14 +4,13 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+" --- PLUGINS ---
+
 " initialize vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 " solarized colors with termguicolors support
 Plug 'lifepillar/vim-solarized8'
-
-" nerdtree for directory tree
-Plug 'preservim/nerdtree'
 
 " autocompletion
 " TODO: configure this from the docs
@@ -23,24 +22,12 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
-" real men use true color support
-set termguicolors
+" --- COLORS ---
 
 " use solarized8 color scheme (the flat variant looked better)
 colorscheme solarized8_flat
 
-" rebind CTRL+P to open fzf
-" TODO: can this be CMD+SHIFT+O?
-nnoremap <C-p> :FZF<CR>
-
-" coc configuration from https://github.com/neoclide/coc.nvim
-set hidden
-set nobackup
-set nowritebackup
-set cmdheight=2
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
+" --- COC AUTOCOMPLETE ---
 
 " use tab to trigger coc completion
 inoremap <silent><expr> <TAB>
