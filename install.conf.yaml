@@ -33,9 +33,6 @@
         ~/.vimrc: vim/vimrc
         ~/.ideavimrc: vim/ideavimrc
 
-        # nvim
-        ~/.config/nvim: nvim
-
         # karabiner
         ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
 
