@@ -4,7 +4,6 @@
 # IDEs and editors
 .idea
 
-# vim generated files
-# TODO: consider linking individual files instead of the whole dir
-vim/config/.netrwhist
+# brew lockfile
+brew/Brewfile.lock.json
 

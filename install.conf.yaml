@@ -29,7 +29,6 @@
         ~/.gitconfig-work: git/gitconfig-work
 
         # vim
-        ~/.vim: vim/config
         ~/.vimrc: vim/vimrc
         ~/.ideavimrc: vim/ideavimrc
 
@@ -41,8 +40,8 @@
 
 # set up the home directory structure
 -   create:
-        - projects
-        - projects/work
+        - ~/projects
+        - ~/projects/work
 
 # install brew (automatic install does not work)
 -   shell:
