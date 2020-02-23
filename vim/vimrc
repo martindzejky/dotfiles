@@ -33,13 +33,13 @@ set showmatch
 set textwidth=100
 set undolevels=1000
 set visualbell
- 
+
 " search
 set hlsearch
 set ignorecase
 set incsearch
 set smartcase
- 
+
 " indentation
 set autoindent
 set expandtab
@@ -47,16 +47,6 @@ set shiftwidth=4
 set smartindent
 set smarttab
 set softtabstop=4
-
-" coc configuration from https://github.com/neoclide/coc.nvim
-" TODO: what do these really do?
-set hidden
-set nobackup
-set nowritebackup
-set cmdheight=2
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
 
 " --- COLORS ---
 
@@ -84,4 +74,3 @@ nnoremap Q <nop>
 " rebind CTRL+P to open fzf
 " TODO: can this be CMD+SHIFT+O?
 nnoremap <C-p> :FZF<CR>
-
