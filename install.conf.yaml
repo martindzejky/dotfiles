@@ -71,3 +71,10 @@
 # install brew packages
 - brewfile:
       - brew/Brewfile
+
+# space up spacemacs for emacs
+- shell:
+    - command: scripts/install/emacs.sh
+      description: Installing spacemacs
+      stdout: true
+
