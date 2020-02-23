@@ -39,6 +39,9 @@
         # karabiner
         ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
 
+        # emacs
+        ~/.spacemacs: emacs/spacemacs
+
 # set up the home directory structure
 -   create:
         - projects
