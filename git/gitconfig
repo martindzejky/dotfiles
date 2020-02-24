@@ -21,7 +21,6 @@
 [alias]
     a = add
     aa = add --all
-    aacz = !git add --all && git commit
     aaco = !git add --all && git commit
     aacoa = !git add --all && git commit --amend --no-edit
     aacoae = !git add --all && git commit --amend
