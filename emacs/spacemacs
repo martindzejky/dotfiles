@@ -39,9 +39,11 @@
      helm
      multiple-cursors
      treemacs
+     auto-completion
 
      ;; Syntax
      markdown
+     html
      javascript
      typescript
      shell-scripts
