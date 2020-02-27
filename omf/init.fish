@@ -29,16 +29,11 @@ alias lla "ls -AlF"
 alias lal lla
 
 # apps
-alias a  atom
-alias bo bower
-alias bu bundler
 alias d  docker
 alias g  git
 alias gu gulp
 alias k  kubectl
 alias kc 'set ARG (kubectl config get-contexts -o=name | fzf); if test -n $ARG; kubectl config use-context $ARG; end;'
-alias ra rails
-alias w  webpack
 alias y  yarn
 
 # PATH
@@ -86,6 +81,5 @@ set -gx NODE_OPTIONS "--max_old_space_size=4096"
 
 # set up light/dark mode in iTerm
 if is-os-dark-mode
-    echo "OS is in dark mode, switching iTerm profile to Dark"
     toggle-dark-mode
 end
