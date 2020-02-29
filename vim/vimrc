@@ -1,13 +1,6 @@
 " --- GENERAL ---
 
 " https://github.com/changemewtf/no_plugins
-" enter the current millenium
-set nocompatible
-
-" enable syntax and plugins
-syntax enable
-filetype plugin on
-
 " file autocomplete with subfolders
 set path+=**
 set wildmenu
@@ -17,55 +10,52 @@ let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
-" TODO: for some reason this makes vim start 10x slower
-"let g:netrw_list_hide=netrw_gitignore#Hide()
-"let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " the following settings are copied from somewhere and
 " are the default "sane" things to have in vimrc
 " (I guess)
 
-" general
-set backspace=indent,eol,start
+" break line only on certain characters
 set linebreak
+
+" enable line numbers and use relative numbering - really helpful in vim!
 set number
 set relativenumber
-set ruler
-set showmatch
-set textwidth=100
-set undolevels=1000
-set visualbell
+
 " show the typed commands in the status line
 set showcmd
 
-" search
-set hlsearch
-set ignorecase
-set incsearch
-set smartcase
+" real men use true color support
+set termguicolors
 
-" indentation
-set autoindent
-set expandtab
-set shiftwidth=4
-set smartindent
-set smarttab
-set softtabstop=4
+" --- KEYS ---
 
 " leader keys
-let g:mapleader = "\<Space>"
-let g:maplocalleader = ','
+let g:mapleader="\<Space>"
+let g:maplocalleader=','
+
+" disable q: and Q because I always press them
+" by mistake and I never actually use them
+map q: <Nop>
+nnoremap Q <Nop>
+
+" bind fzf to leader+f
+nnoremap <silent> <Leader>f :FZF<CR>
 
 " --- PLUGINS ---
 
-" automagically install/update vim-plug
+" automagically install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" open vim-plug windows on the bottom
+let g:plug_window='botright 10new'
+
 call plug#begin('~/.vim/plugged')
+Plug 'liuchengxu/vim-better-default'
 Plug 'altercation/vim-colors-solarized'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -74,11 +64,19 @@ call plug#end()
 " vim-which-key configuration
 " display help after 1000ms
 set timeoutlen=1000
-" for which keys to display help
+" for what keys to display help
 nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
 
-" --- COLORS ---
+" --- OVERWRITING DEFAULTS ---
+" because the plugin vim-better-defaults would be by default loaded after my
+" vimrc and overwrite my settings
+" https://github.com/liuchengxu/vim-better-default#how-to-override-the-existing-settings
+
+runtime! plugin/default.vim
+
+" use solarized colors <3
+colorscheme solarized
 
 " automatically switch between light and dark theme based on
 " iTerm's theme (which is in turn based on OS)
@@ -87,21 +85,4 @@ if $ITERM_PROFILE == "Dark"
 else
     set background=light
 endif
-
-" use solarized colors <3
-colorscheme solarized
-
-" real men use true color support
-set termguicolors
-
-" --- KEYS ---
-
-" disable q: and Q because I always press them
-" by mistake and I never actually use them
-map q: <Nop>
-nnoremap Q <nop>
-
-" rebind CTRL+P to open fzf
-" TODO: use the leader key
-nnoremap <Leader>f :FZF<CR>
 
