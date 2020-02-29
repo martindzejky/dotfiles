@@ -68,9 +68,14 @@ if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
 end
 
 # my own scripts
-
 if test -d ~/.dotfiles/scripts/bin
     set -gx PATH ~/.dotfiles/scripts/bin $PATH
+end
+
+# gettext for spacemacs
+# https://github.com/bbatsov/projectile/issues/1302
+if test -d /usr/local/opt/gettext/bin
+    set -gx PATH /usr/local/opt/gettext/bin $PATH
 end
 
 # NODE
