@@ -47,7 +47,11 @@ nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o
 
 " file-specific keybindings
-nnoremap <silent> <Leader>fw :w
+nnoremap <silent> <Leader>fw :write<CR>
+
+" jumping around the file using vim-easymotion plugin
+map <Leader>j <Plug>(easymotion-prefix)
+map <Leader>jj <Plug>(easymotion-s)
 
 " --- PLUGINS ---
 
@@ -66,6 +70,7 @@ Plug 'liuchengxu/vim-better-default'
 Plug 'altercation/vim-colors-solarized'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " vim-which-key configuration
@@ -76,11 +81,13 @@ nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
 
 " --- OVERWRITING DEFAULTS ---
-" because the plugin vim-better-defaults would be by default loaded after my
-" vimrc and overwrite my settings
+" Because the plugin vim-better-defaults would be by default loaded after my
+" vimrc and overwrite all of my settings.
 " https://github.com/liuchengxu/vim-better-default#how-to-override-the-existing-settings
 
-runtime! plugin/default.vim
+" Previously I used "runtime! plugin/default.vim" as suggested in the link
+" above. But, manually including this file like this makes it work for IdeaVim, too.
+source ~/.vim/plugged/vim-better-default/plugin/default.vim
 
 " use solarized colors <3
 colorscheme solarized
