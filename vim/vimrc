@@ -40,7 +40,14 @@ map q: <Nop>
 nnoremap Q <Nop>
 
 " bind fzf to leader+f
-nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>ff :FZF<CR>
+
+" window-handling keybindings
+nnoremap <silent> <Leader>wc <C-w>c
+nnoremap <silent> <Leader>wo <C-w>o
+
+" file-specific keybindings
+nnoremap <silent> <Leader>fw :w
 
 " --- PLUGINS ---
 
