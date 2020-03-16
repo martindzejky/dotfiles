@@ -38,6 +38,9 @@
     coae = commit --amend
     ce = checkout
     cp = cherry-pick
+    cpc = cherry-pick --continue
+    cps = cherry-pick --skip
+    cpa = cherry-pick --abort
     d = diff
     ds = diff --stat
     de = describe --tags
