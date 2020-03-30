@@ -25,7 +25,6 @@
     aacoa = !git add --all && git commit --amend --no-edit
     aacoae = !git add --all && git commit --amend
     b = branch
-    bb = !gitin branch
     bd = branch --delete
     bs = bisect
     bsb = bisect bad
@@ -49,7 +48,6 @@
     f = fetch --prune
     fpl = !git fetch --prune && git pull
     l = log --oneline
-    ll = !gitin log --tags
     lg = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
     mff = merge --ff-only
@@ -66,7 +64,6 @@
     rsh = reset --hard
     rss = reset --soft
     s = status
-    ss = !gitin status
     su = submodule
     sua = submodule add
     suur = submodule update --remote
