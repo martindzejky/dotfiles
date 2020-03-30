@@ -1,36 +1,36 @@
+tap "denisidoro/tools"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "isacikgoz/gitin"
-tap "denisidoro/tools"
 
+brew "denisidoro/tools/navi"
 brew "fish"
 brew "git"
 brew "git-lfs"
 brew "gnupg"
+brew "isacikgoz/gitin/gitin"
 brew "mas"
+brew "nvm"
 brew "pinentry-mac"
 brew "python"
-brew "nvm"
 brew "ranger"
 brew "yarn"
-brew "isacikgoz/gitin/gitin"
-brew "denisidoro/tools/navi"
 
 cask "adoptopenjdk8"
 cask "android-sdk"
 cask "brave-browser"
-cask "google-chrome"
 cask "discord"
 cask "emacs"
 cask "font-jetbrains-mono"
+cask "google-chrome"
 cask "iterm2"
 cask "karabiner-elements"
 cask "kicad"
 
 mas "1Password", id: 1333542190
 mas "BetterSnapTool", id: 417375580
-mas "Todoist", id: 585829637
 mas "Brightness Slider", id: 456624497
+mas "Todoist", id: 585829637
