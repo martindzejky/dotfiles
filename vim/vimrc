@@ -59,11 +59,6 @@ nmap <Leader>jf <Plug>(easymotion-bd-fn)
 nmap <Leader>jl <Plug>(easymotion-bd-jk)
 nmap <Leader>jn <Plug>(easymotion-bd-n)
 
-" also utilize easemotion for searching
-map / <Plug>(easymotion-sn)
-map n <Plug>(easymotion-next)
-map N <Plug>(easymotion-prev)
-
 " --- PLUGINS ---
 
 " automagically install vim-plug

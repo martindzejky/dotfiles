@@ -1,3 +1,9 @@
+" leader keys
+" the ones in vimrc are ignored
+" see https://youtrack.jetbrains.com/issue/VIM-1132
+let mapleader=" "
+let maplocalleader=','
+
 source ~/.vimrc
 
 " enable built-in ideavim plugins
@@ -18,4 +24,3 @@ map <C-N> <A-N>
 map <C-P> <A-P>
 map <C-X> <A-X>
 map g<C-N> g<A-N>
-
