@@ -49,9 +49,20 @@ nnoremap <silent> <Leader>wo <C-w>o
 " file-specific keybindings
 nnoremap <silent> <Leader>fw :write<CR>
 
+" dotfile specific
+nnoremap <silent> <Leader>fdo :open $MYVIMRC<CR>
+nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
+
 " jumping around the file using vim-easymotion plugin
-map <Leader>j <Plug>(easymotion-prefix)
-map <Leader>jj <Plug>(easymotion-s)
+nmap ; <Plug>(easymotion-bd-fn)
+nmap <Leader>jf <Plug>(easymotion-bd-fn)
+nmap <Leader>jl <Plug>(easymotion-bd-jk)
+nmap <Leader>jn <Plug>(easymotion-bd-n)
+
+" also utilize easemotion for searching
+map / <Plug>(easymotion-sn)
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
 
 " --- PLUGINS ---
 
@@ -65,6 +76,11 @@ endif
 " open vim-plug windows on the bottom
 let g:plug_window='botright 10new'
 
+" tell easemotion to ignore case
+let g:EasyMotion_smartcase=1
+let g:EasyMotion_do_mapping=0
+
+" plugin list
 call plug#begin('~/.vim/plugged')
 Plug 'liuchengxu/vim-better-default'
 Plug 'altercation/vim-colors-solarized'
