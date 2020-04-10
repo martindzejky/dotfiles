@@ -54,10 +54,9 @@ nnoremap <silent> <Leader>fdo :open $MYVIMRC<CR>
 nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
 
 " jumping around the file using vim-easymotion plugin
-nmap ; <Plug>(easymotion-bd-fn)
-nmap <Leader>jf <Plug>(easymotion-bd-fn)
-nmap <Leader>jl <Plug>(easymotion-bd-jk)
-nmap <Leader>jn <Plug>(easymotion-bd-n)
+nmap ;; <Plug>(easymotion-bd-fn)
+nmap ;l <Plug>(easymotion-bd-jk)
+nmap ;n <Plug>(easymotion-bd-n)
 
 " --- PLUGINS ---
 

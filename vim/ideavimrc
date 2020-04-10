@@ -2,8 +2,8 @@
 " the ones in vimrc are ignored
 " see https://youtrack.jetbrains.com/issue/VIM-1132
 let mapleader=" "
-let maplocalleader=','
 
+" import the existing vimrc settings
 source ~/.vimrc
 
 " enable built-in ideavim plugins
@@ -17,6 +17,9 @@ set showmode
 
 " key mappings
 nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
+nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
+nnoremap <silent> <Leader>pm :action ManageRecentProjects<CR>
+nnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
 
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
