@@ -91,9 +91,13 @@ if test -d /usr/local/opt/gettext/bin
     set -gx PATH /usr/local/opt/gettext/bin $PATH
 end
 
-# NODE
+# CUSTOMIZATIONS
 
+# increase node RAM limits... you know, it's node
 set -gx NODE_OPTIONS "--max_old_space_size=4096"
+
+# set fzf to use the fd command by default
+set -gx FZF_DEFAULT_COMMAND "fd --type f"
 
 # AUTOMATION
 

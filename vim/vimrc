@@ -26,7 +26,8 @@ set relativenumber
 set showcmd
 
 " real men use true color support
-set termguicolors
+" TODO: ehm, this does not work with 'altercation/vim-colors-solarized' :shrug:
+" set termguicolors
 
 " --- KEYS ---
 
@@ -39,24 +40,27 @@ let g:maplocalleader=','
 map q: <Nop>
 nnoremap Q <Nop>
 
-" bind fzf to leader+f
-nnoremap <silent> <Leader>ff :FZF<CR>
-
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o
 
 " file-specific keybindings
+nnoremap <silent> <Leader>ff :Files<CR>
+nnoremap <silent> <Leader>fg :GFiles?<CR>
 nnoremap <silent> <Leader>fw :write<CR>
 
 " dotfile specific
-nnoremap <silent> <Leader>fdo :open $MYVIMRC<CR>
+nnoremap <silent> <Leader>fde :edit $MYVIMRC<CR>
 nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
 
 " jumping around the file using vim-easymotion plugin
 nmap ;; <Plug>(easymotion-bd-fn)
 nmap ;l <Plug>(easymotion-bd-jk)
 nmap ;n <Plug>(easymotion-bd-n)
+
+" refactoring
+nnoremap <silent> <Leader>rn :YcmCompleter RefactorRename<CR>
+nnoremap <silent> <Leader>rf :YcmCompleter FitIt<CR>
 
 " --- PLUGINS ---
 
@@ -79,9 +83,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'liuchengxu/vim-better-default'
 Plug 'altercation/vim-colors-solarized'
 Plug 'liuchengxu/vim-which-key'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim' " TODO: set up keymaps for commands and customize options
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' } " TODO: set up keymaps
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive' " TODO: learn and set this up <3
 call plug#end()
 
 " vim-which-key configuration
@@ -90,6 +99,9 @@ set timeoutlen=1000
 " for what keys to display help
 nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
+
+" use ag for the ack.vim plugin
+let g:ackprg = 'ag --vimgrep'
 
 " --- OVERWRITING DEFAULTS ---
 " Because the plugin vim-better-defaults would be by default loaded after my

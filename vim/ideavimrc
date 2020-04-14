@@ -20,9 +20,13 @@ nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
 nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
 nnoremap <silent> <Leader>pm :action ManageRecentProjects<CR>
 nnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <silent> <Leader>rn :action RenameElement<CR>
 
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
 map <C-P> <A-P>
 map <C-X> <A-X>
 map g<C-N> g<A-N>
+
+" increase the waiting time for keycodes
+set timeoutlen=1000
