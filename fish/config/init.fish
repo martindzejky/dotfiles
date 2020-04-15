@@ -18,6 +18,9 @@ for file in $fisher_path/conf.d/*.fish
     builtin source $file 2> /dev/null
 end
 
+# pure prompt
+set -g pure_color_success blue
+
 ## LOCALE
 
 set -gx LC_ALL en_US.UTF-8
