@@ -1,7 +1,10 @@
 [user]
     name = Martin Jakubik
-    email = martin.jakubik@exponea.com
+    email = martin@jakubik.info
     signingKey = 04694F986FD761AFC03245FC3E8024ECD351177C
+
+[commit]
+    gpgsign = true
 
 [gpg]
     program = /usr/local/bin/gpg
@@ -11,7 +14,6 @@
 
 [core]
     editor = vim
-    excludesfile = /Users/chuckeles/.gitignore_global
     ignorecase = false
 
 [color]
