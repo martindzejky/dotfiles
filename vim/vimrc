@@ -40,9 +40,14 @@ let g:maplocalleader=','
 map q: <Nop>
 nnoremap Q <Nop>
 
+" amazing shortcuts
+nnoremap <silent> <Leader><Leader> :Commands<CR>
+nnoremap <silent> <Leader>? :Helptags<CR>
+
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o
+nnoremap <silent> <Leader>wh <C-w>s
 
 " file-specific keybindings
 nnoremap <silent> <Leader>ff :Files<CR>
@@ -114,6 +119,13 @@ source ~/.vim/plugged/vim-better-default/plugin/default.vim
 
 " use solarized colors <3
 colorscheme solarized
+
+" do not put everything into clipboard please
+" I cannot get used to it!
+set clipboard-=unnamed
+
+" unmap <CR>
+nunmap <CR>
 
 " automatically switch between light and dark theme based on
 " iTerm's theme (which is in turn based on OS)
