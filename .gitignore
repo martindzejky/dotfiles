@@ -7,3 +7,6 @@
 # brew lockfile
 brew/Brewfile.lock.json
 
+# ignored fish functions
+fish/functions/fisher.fish
+
