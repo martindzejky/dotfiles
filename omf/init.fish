@@ -51,15 +51,9 @@ if which zoxide > /dev/null
     end
 end
 
-# node/nvm
-if test -d ~/.nvm
-    set -gx NVM_DIR ~/.nvm
-end
-
-# yarn
-if which yarn > /dev/null
-    set -gx PATH $PATH (yarn global bin)
-end
+# n - node version manager
+set -gx N_PREFIX ~/.n
+set -gx PATH $N_PREFIX/bin $PATH 
 
 # android
 set -gx JAVA_HOME (/usr/libexec/java_home)
