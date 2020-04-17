@@ -75,7 +75,6 @@ nnoremap <silent> <Leader>rf :YcmCompleter FitIt<CR>
 
 " git
 nnoremap <silent> <Leader>gaa :Git add --all<CR>
-nnoremap <silent> <Leader>gac :Git add --all<CR> :Git commit<CR>
 nnoremap <silent> <Leader>gbr :Git branch<CR>
 nnoremap <silent> <Leader>gbl :Git blame<CR>
 nnoremap <silent> <Leader>gco :Git commit<CR>
