@@ -29,6 +29,9 @@ set showcmd
 " TODO: ehm, this does not work with 'altercation/vim-colors-solarized' :shrug:
 " set termguicolors
 
+" decrease update time to have git markings appear faster
+set updatetime=100
+
 " --- KEYS ---
 
 " leader keys
@@ -62,10 +65,31 @@ nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
 nmap ;; <Plug>(easymotion-bd-fn)
 nmap ;l <Plug>(easymotion-bd-jk)
 nmap ;n <Plug>(easymotion-bd-n)
+" inlude jumping to hunks
+nmap ;H <Plug>(GitGutterPrevHunk)
+nmap ;h <Plug>(GitGutterNextHunk)
 
 " refactoring
 nnoremap <silent> <Leader>rn :YcmCompleter RefactorRename<CR>
 nnoremap <silent> <Leader>rf :YcmCompleter FitIt<CR>
+
+" git
+nnoremap <silent> <Leader>gaa :Git add --all<CR>
+nnoremap <silent> <Leader>gac :Git add --all<CR> :Git commit<CR>
+nnoremap <silent> <Leader>gbr :Git branch<CR>
+nnoremap <silent> <Leader>gbl :Git blame<CR>
+nnoremap <silent> <Leader>gco :Git commit<CR>
+nnoremap <silent> <Leader>gce :Git checkout<CR>
+nnoremap <silent> <Leader>gd :Git diff<CR>
+nnoremap <silent> <Leader>gs :Git<CR>
+
+nnoremap <silent> <Leader>ghp <Plug>(GitGutterPreviewHunk)
+nnoremap <silent> <Leader>ghs <Plug>(GitGutterStageHunk)
+nnoremap <silent> <Leader>ghu <Plug>(GitGutterUndoHunk)
+nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
+
+" buffers
+nnoremap <silent> <Leader>bb :Buffers<CR>
 
 " --- PLUGINS ---
 
@@ -95,7 +119,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' } " TODO: set up keymaps
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-fugitive' " TODO: learn and set this up <3
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " vim-which-key configuration
@@ -119,6 +146,7 @@ source ~/.vim/plugged/vim-better-default/plugin/default.vim
 
 " use solarized colors <3
 colorscheme solarized
+let g:airline_theme='solarized'
 
 " do not put everything into clipboard please
 " I cannot get used to it!
