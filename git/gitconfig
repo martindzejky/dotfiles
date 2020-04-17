@@ -27,7 +27,7 @@
     aacoa = !git add --all && git commit --amend --no-edit
     aacoae = !git add --all && git commit --amend
     bl = blame
-    br = branch
+    b = branch
     bd = branch --delete
     bs = bisect
     bsb = bisect bad
