@@ -18,3 +18,6 @@ set -g pure_color_success blue
 set -gx LC_ALL en_US.UTF-8
 set -gx LANG en_US.UTF-8
 
+# gpg tty
+set -gx GPG_TTY (tty)
+
