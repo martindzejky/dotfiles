@@ -69,6 +69,7 @@ nmap ;H <Plug>(GitGutterPrevHunk)
 nmap ;h <Plug>(GitGutterNextHunk)
 
 " refactoring
+" TODO: YCM is no longer used
 nnoremap <silent> <Leader>rn :YcmCompleter RefactorRename<CR>
 nnoremap <silent> <Leader>rf :YcmCompleter FitIt<CR>
 
@@ -165,9 +166,13 @@ set timeoutlen=1000
 nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
 
-" Completion engine. It is set up to handle C++ and Typescript completion.
-" TODO: set up keymaps
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' }
+" COMPLETION
+" Modern completion engine.
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Better support for .jsonc files which are used by coc.nvim plugin.
+" https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " end the list of plugins
 call plug#end()
