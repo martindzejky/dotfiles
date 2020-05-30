@@ -33,9 +33,6 @@
         # karabiner
         ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
 
-        # emacs
-        ~/.spacemacs: emacs/spacemacs
-
 # set up the home directory structure
 -   create:
         - ~/projects
@@ -62,10 +59,4 @@
 # install brew packages
 - brewfile:
       - brew/Brewfile
-
-# space up spacemacs for emacs
-- shell:
-    - command: scripts/install/emacs.sh
-      description: Installing spacemacs
-      stdout: true
 
