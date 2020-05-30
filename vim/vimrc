@@ -169,9 +169,6 @@ nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
 " TODO: set up keymaps
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' }
 
-" Plugin to allow coding Godot scripts in Vim.
-Plug 'calviken/vim-gdscript3'
-
 " end the list of plugins
 call plug#end()
 
