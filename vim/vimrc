@@ -36,7 +36,6 @@ set updatetime=100
 
 " leader keys
 let g:mapleader="\<Space>"
-let g:maplocalleader=','
 
 " disable q: and Q because I always press them
 " by mistake and I never actually use them
@@ -91,6 +90,8 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 nnoremap <silent> <Leader>bb :Buffers<CR>
 
 " --- PLUGINS ---
+" Following is a list of plugins and their respective configurations.
+" `vim-plug` is used to manage the plugins. Its configuration is the first below.
 
 " automagically install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -102,37 +103,78 @@ endif
 " open vim-plug windows on the bottom
 let g:plug_window='botright 10new'
 
+" start listing the plugins
+call plug#begin('~/.vim/plugged')
+
+" BASICS
+
+" Contains many useful defaults for Vim. Some of the options are overwritten
+" at the bottom of this file.
+Plug 'liuchengxu/vim-better-default'
+
+" Colors <3
+Plug 'altercation/vim-colors-solarized'
+
+" Makes Vim handle all kinds of languages. Installs required plugins if a
+" specific file type is opened.
+Plug 'sheerun/vim-polyglot'
+
+" AIRLINE
+" Adds a nice status bar to the bottom.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Use the solarized colors for airline.
+let g:airline_theme='solarized'
+
+" CURSORS & NAVIGATION
+
+" Easymotion plugin allows some fine navigation around the files.
+" Mapped to `"` leader key.
+Plug 'easymotion/vim-easymotion'
+
 " tell easemotion to ignore case
 let g:EasyMotion_smartcase=1
 let g:EasyMotion_do_mapping=0
 
-" plugin list
-call plug#begin('~/.vim/plugged')
-Plug 'liuchengxu/vim-better-default'
-Plug 'altercation/vim-colors-solarized'
-Plug 'liuchengxu/vim-which-key'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim' " TODO: set up keymaps for commands and customize options
-Plug 'easymotion/vim-easymotion'
+" Allows the use of multiple cursors.
 Plug 'terryma/vim-multiple-cursors'
-Plug 'sheerun/vim-polyglot'
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' } " TODO: set up keymaps
-Plug 'jiangmiao/auto-pairs'
+
+" GIT
+" Git integrations, not much to be said here.
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-call plug#end()
 
-" vim-which-key configuration
+" FZF
+" Fuzzy search all the things! This plugin allows to fuzzy-search files, help
+" files, commands, buffers, etc. I am probably using only 10% of it.
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim' " TODO: set up keymaps for commands and customize options
+
+" use ag for the ack.vim plugin
+let g:ackprg = 'ag --vimgrep'
+
+" WHICH KEY
+" Useful plugin for helping me remember my key bindings.
+Plug 'liuchengxu/vim-which-key'
+
 " display help after 1000ms
 set timeoutlen=1000
+
 " for what keys to display help
 nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
 
-" use ag for the ack.vim plugin
-let g:ackprg = 'ag --vimgrep'
+" Completion engine. It is set up to handle C++ and Typescript completion.
+" TODO: set up keymaps
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer --ts-completer' }
+
+" Plugin to allow coding Godot scripts in Vim.
+Plug 'calviken/vim-gdscript3'
+
+" end the list of plugins
+call plug#end()
+
 
 " --- OVERWRITING DEFAULTS ---
 " Because the plugin vim-better-defaults would be by default loaded after my
@@ -145,7 +187,6 @@ source ~/.vim/plugged/vim-better-default/plugin/default.vim
 
 " use solarized colors <3
 colorscheme solarized
-let g:airline_theme='solarized'
 
 " do not put everything into clipboard please
 " I cannot get used to it!
