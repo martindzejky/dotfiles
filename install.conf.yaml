@@ -29,8 +29,9 @@
         ~/.gitconfig-work-system-specific: git/gitconfig-work-system-specific
 
         # vim
-        ~/.vimrc: vim/vimrc
+        ~/.vimrc: vim/init.vim
         ~/.ideavimrc: vim/ideavimrc
+        ~/.config/nvim: vim
 
         # karabiner
         ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
