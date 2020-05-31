@@ -62,7 +62,7 @@ let g:ackprg = 'ag --vimgrep'
 Plug 'liuchengxu/vim-which-key'
 
 " display help after 1000ms
-set timeoutlen=500
+set timeoutlen=1000
 
 " display help for the leader key
 nnoremap <silent> <Leader> :WhichKey '<Space>'<CR>
@@ -74,6 +74,12 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " Better support for .jsonc files which are used by coc.nvim plugin.
 " https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" Don't pass messages to |ins-completion-menu|. Recommended for coc.nvim.
+set shortmess+=c
+
+" Use CTRL+SPACE to trigger completion.
+inoremap <silent><expr> <C-Space> coc#refresh()
 
 " end the list of plugins
 call plug#end()

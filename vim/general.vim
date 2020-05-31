@@ -32,3 +32,6 @@ set termguicolors
 " decrease update time to have git markings appear faster
 set updatetime=100
 
+" always show the signcolumn
+set signcolumn=yes
+
