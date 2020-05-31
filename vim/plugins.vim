@@ -58,14 +58,14 @@ let g:ackprg = 'ag --vimgrep'
 
 " WHICH KEY
 " Useful plugin for helping me remember my key bindings.
+" TODO: why u no work?
 Plug 'liuchengxu/vim-which-key'
 
 " display help after 1000ms
-set timeoutlen=1000
+set timeoutlen=500
 
-" for what keys to display help
-nnoremap <silent> <Leader> :<c-u>WhichKey '<Space>'<CR>
-nnoremap <silent> <LocalLeader> :<c-u>WhichKey ','<CR>
+" display help for the leader key
+nnoremap <silent> <Leader> :WhichKey '<Space>'<CR>
 
 " COMPLETION
 " Modern completion engine.
