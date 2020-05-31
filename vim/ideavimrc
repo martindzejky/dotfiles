@@ -4,6 +4,7 @@
 let mapleader=" "
 
 " import the existing vimrc settings
+" TODO: this is not a good idea since I switched to neovim
 source ~/.vimrc
 
 " enable built-in ideavim plugins
