@@ -33,11 +33,17 @@ nmap ;n <Plug>(easymotion-bd-n)
 " inlude jumping to hunks
 nmap ;H <Plug>(GitGutterPrevHunk)
 nmap ;h <Plug>(GitGutterNextHunk)
+" include jumping to diagnostic information
+nmap ;D <Plug>(coc-diagnostic-prev)
+nmap ;d <Plug>(coc-diagnostic-next)
+
+" navigation to definitions and references
+nnoremap <silent> <Leader>gd <Plug>(coc-definition)
+nnoremap <silent> <Leader>gi <Plug>(coc-implementation)
+nnoremap <silent> <Leader>gr <Plug>(coc-references)
 
 " refactoring
-" TODO: YCM is no longer used
-nnoremap <silent> <Leader>rn :YcmCompleter RefactorRename<CR>
-nnoremap <silent> <Leader>rf :YcmCompleter FitIt<CR>
+nnoremap <silent> <Leader>rn <Plug>(coc-rename)
 
 " git
 nnoremap <silent> <Leader>gaa :Git add --all<CR>
