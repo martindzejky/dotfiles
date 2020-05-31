@@ -4,11 +4,12 @@
 runtime! plugin/default.vim
 
 " use solarized colors <3
-colorscheme solarized
+colorscheme NeoSolarized
 
 " do not put everything into clipboard please
 " I cannot get used to it!
 set clipboard-=unnamed
+set clipboard-=unnamedplus
 
 " unmap <CR>
 nunmap <CR>

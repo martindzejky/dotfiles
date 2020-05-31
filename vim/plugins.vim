@@ -14,8 +14,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'liuchengxu/vim-better-default'
 
 " Colors <3
-" TODO: switch to https://github.com/overcache/NeoSolarized
-Plug 'altercation/vim-colors-solarized'
+Plug 'overcache/NeoSolarized'
 
 " Makes Vim handle all kinds of languages. Installs required plugins if a
 " specific file type is opened.
