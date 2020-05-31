@@ -24,7 +24,9 @@
 
         # git
         ~/.gitconfig: git/gitconfig
+        ~/.gitconfig-system-specific: git/gitconfig-system-specific
         ~/.gitconfig-work: git/gitconfig-work
+        ~/.gitconfig-work-system-specific: git/gitconfig-work-system-specific
 
         # vim
         ~/.vimrc: vim/vimrc

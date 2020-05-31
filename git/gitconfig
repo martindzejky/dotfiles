@@ -1,7 +1,6 @@
 [user]
     name = Martin Jakubik
     email = martin@jakubik.info
-    signingKey = 04694F986FD761AFC03245FC3E8024ECD351177C
 
 [commit]
     gpgsign = true
@@ -78,6 +77,9 @@
 
     count = !git ls-files | xargs wc -l
     last = show --name-only
+
+[include]
+    path = .gitconfig-system-specific
 
 [includeIf "gitdir:~/projects/work/"]
     path = .gitconfig-work

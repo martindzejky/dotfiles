@@ -10,3 +10,6 @@ brew/Brewfile.lock.json
 # ignored fish functions
 fish/functions/fisher.fish
 
+# git system-specific configs
+gitconfig*system-specific
+
