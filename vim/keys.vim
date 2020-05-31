@@ -12,9 +12,6 @@ nnoremap Q <Nop>
 nnoremap <silent> <Leader><Leader> :Commands<CR>
 nnoremap <silent> <Leader>? :Helptags<CR>
 
-" quick save-all-and-quit shortcut
-nnoremap <silent> <Leader>Q :wqa<CR>
-
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o

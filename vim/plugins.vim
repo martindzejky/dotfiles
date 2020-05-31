@@ -1,19 +1,11 @@
 " Following is a list of plugins and their respective configurations.
 " `vim-plug` is used to manage the plugins. Its configuration is the first below.
 
-" automagically install vim-plug
-" TODO: check whether this is correct for neovim, too
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
 " open vim-plug windows on the bottom
 let g:plug_window='botright 10new'
 
 " start listing the plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 " BASICS
 

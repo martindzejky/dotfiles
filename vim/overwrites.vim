@@ -1,10 +1,7 @@
 " Because the plugin vim-better-defaults would be by default loaded after my
 " vimrc and overwrite all of my settings.
 " https://github.com/liuchengxu/vim-better-default#how-to-override-the-existing-settings
-
-" Previously I used "runtime! plugin/default.vim" as suggested in the link
-" above. But, manually including this file like this makes it work for IdeaVim, too.
-source ~/.vim/plugged/vim-better-default/plugin/default.vim
+runtime! plugin/default.vim
 
 " use solarized colors <3
 colorscheme solarized
@@ -15,6 +12,9 @@ set clipboard-=unnamed
 
 " unmap <CR>
 nunmap <CR>
+
+" quick save-all-and-quit shortcut
+nnoremap <silent> <Leader>Q :wqa<CR>
 
 " automatically switch between light and dark theme based on
 " iTerm's theme (which is in turn based on OS)
