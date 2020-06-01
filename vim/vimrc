@@ -1,0 +1,7 @@
+" This is a simplified vimrc file for use with vim.
+" I now use neovim instead which uses init.vim with more complex
+" configuration. Vim just imports parts of it.
+
+source ~/.config/nvim/general.vim
+source ~/.config/nvim/keys.vim
+
