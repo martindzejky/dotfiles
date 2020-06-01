@@ -57,15 +57,8 @@ Plug 'junegunn/fzf.vim'
 let g:ackprg = 'ag --vimgrep'
 
 " WHICH KEY
-" Useful plugin for helping me remember my key bindings.
-" TODO: why u no work?
-Plug 'liuchengxu/vim-which-key'
-
-" display help after 1000ms
-set timeoutlen=1000
-
-" display help for the leader key
-nnoremap <silent> <Leader> :WhichKey '<Space>'<CR>
+" Removed because it mostly did not work in neovim, I don't know why. If I
+" later decide to use it again, use the git history on this file.
 
 " COMPLETION
 " Modern completion engine.
