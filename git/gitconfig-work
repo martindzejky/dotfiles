@@ -2,6 +2,3 @@
     name = Martin Jakubik
     email = martin.jakubik@exponea.com
 
-[include]
-    path = .gitconfig-work-system-specific
-
