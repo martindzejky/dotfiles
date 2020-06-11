@@ -19,6 +19,9 @@
     diff = auto
     ui = auto
 
+[pull]
+    ff = only
+
 [alias]
     a = add
     aa = add --all
@@ -83,4 +86,3 @@
 
 [includeIf "gitdir:~/projects/work/"]
     path = .gitconfig-work
-
