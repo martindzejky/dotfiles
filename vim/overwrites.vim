@@ -1,7 +1,14 @@
 " Because the plugin vim-better-defaults would be by default loaded after my
 " vimrc and overwrite all of my settings.
 " https://github.com/liuchengxu/vim-better-default#how-to-override-the-existing-settings
-runtime! plugin/default.vim
+
+if has('nvim')
+    " importing in neovim
+    runtime! plugin/default.vim
+else
+    " this is used in ideavim plugin
+    source ~/.local/share/nvim/plugged/vim-better-default/plugin/default.vim
+endif
 
 " use solarized colors <3
 colorscheme NeoSolarized

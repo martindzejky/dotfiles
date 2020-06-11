@@ -1,11 +1,12 @@
 " leader keys
 " the ones in vimrc are ignored
 " see https://youtrack.jetbrains.com/issue/VIM-1132
-let mapleader=" "
+let g:mapleader=" "
 
-" import the existing vimrc settings
-" TODO: this is not a good idea since I switched to neovim
-source ~/.vimrc
+" import some of the existing vim configs
+source ~/.config/nvim/general.vim
+source ~/.config/nvim/keys.vim
+source ~/.config/nvim/overwrites.vim
 
 " enable built-in ideavim plugins
 set easymotion
