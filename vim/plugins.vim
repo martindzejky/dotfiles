@@ -74,6 +74,27 @@ set shortmess+=c
 " Use CTRL+SPACE to trigger completion.
 inoremap <silent><expr> <C-Space> coc#refresh()
 
+" Use TAB to trigger completion.
+inoremap <silent><expr> <Tab>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<Tab>" :
+    \ coc#refresh()
+
+" Use TAB and SHIFT+TAB to navigate completion.
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Use ENTER to confirm completion.
+inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
 " end the list of plugins
 call plug#end()
+
+" UTILITIES
+
+" Used by the coc.nvim configuration to handle TAB key.
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
 
