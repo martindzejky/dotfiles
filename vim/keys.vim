@@ -25,6 +25,8 @@ nnoremap <silent> <Leader>fw :write<CR>
 " dotfile specific
 nnoremap <silent> <Leader>fde :edit $MYVIMRC<CR>
 nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
+nnoremap <silent> <Leader>fdi :PlugInstall<CR>
+nnoremap <silent> <Leader>fdu :PlugUpdate<CR>
 
 " jumping around the file using vim-easymotion plugin
 nmap ;; <Plug>(easymotion-bd-fn)
@@ -61,4 +63,7 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 
 " buffers
 nnoremap <silent> <Leader>bb :Buffers<CR>
+
+" nerdtree
+nnoremap <silent> <Leader>1 :NERDTreeToggle<CR>
 

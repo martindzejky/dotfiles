@@ -25,6 +25,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" NERDTREE
+" Nice file explorer sidebar.
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Use the solarized colors for airline.
 let g:airline_theme='solarized'
 
