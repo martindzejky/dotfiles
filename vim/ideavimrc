@@ -1,12 +1,25 @@
-" leader keys
-" the ones in vimrc are ignored
-" see https://youtrack.jetbrains.com/issue/VIM-1132
-let g:mapleader=" "
+" SETTINGS for the IDEAVIM plugin in WEBSTORM
+
+" leader key
+" https://youtrack.jetbrains.com/issue/VIM-1132
+let mapleader=" "
 
 " import some of the existing vim configs
 source ~/.config/nvim/general.vim
-source ~/.config/nvim/keys.vim
-source ~/.config/nvim/overwrites.vim
+
+" import better defaults
+source ~/.local/share/nvim/plugged/vim-better-default/plugin/default.vim
+
+" do not put everything into clipboard please
+" I cannot get used to it!
+set clipboard-=unnamed
+set clipboard-=unnamedplus
+
+" unmap <CR>
+nunmap <CR>
+
+" quick save-all-and-quit shortcut
+nnoremap <silent> <Leader>Q :wqa<CR>
 
 " enable built-in ideavim plugins
 set easymotion
@@ -17,13 +30,6 @@ set ideamarks
 set idearefactormode visual
 set showmode
 
-" key mappings
-nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
-nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
-nnoremap <silent> <Leader>pm :action ManageRecentProjects<CR>
-nnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
-nnoremap <silent> <Leader>rn :action RenameElement<CR>
-
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
 map <C-P> <A-P>
@@ -32,3 +38,35 @@ map g<C-N> g<A-N>
 
 " increase the waiting time for keycodes
 set timeoutlen=1000
+
+" disable q: and Q because I always press them
+" by mistake and I never actually use them
+map q: <Nop>
+nnoremap Q <Nop>
+
+" magic action keybindings
+nnoremap <silent> <Leader><Leader> :action GotoAction<CR>
+nnoremap <silent> <Leader>ff :action GotoFile<CR>
+
+" window-handling keybindings
+nnoremap <silent> <Leader>wc <C-w>c
+nnoremap <silent> <Leader>wo <C-w>o
+nnoremap <silent> <Leader>wh <C-w>s
+nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
+
+" file-specific keybindings
+nnoremap <silent> <Leader>fw :write<CR>
+
+" refactoring
+nnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <silent> <Leader>rn :action RenameElement<CR>
+
+" projects
+nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
+nnoremap <silent> <Leader>pm :action ManageRecentProjects<CR>
+
+" jumping around the file using vim-easymotion plugin
+nmap ;; <Plug>(easymotion-bd-fn)
+nmap ;l <Plug>(easymotion-bd-jk)
+nmap ;n <Plug>(easymotion-bd-n)
+
