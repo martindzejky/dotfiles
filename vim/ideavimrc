@@ -47,6 +47,7 @@ nnoremap Q <Nop>
 " magic action keybindings
 nnoremap <silent> <Leader><Leader> :action GotoAction<CR>
 nnoremap <silent> <Leader>ff :action GotoFile<CR>
+nnoremap <silent> <Leader>bb :action RecentFiles<CR>
 
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
