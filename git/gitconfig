@@ -65,6 +65,7 @@
     rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase -i
+    re = restore
     rs = reset
     rsh = reset --hard
     rss = reset --soft
