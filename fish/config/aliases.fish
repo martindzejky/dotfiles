@@ -17,7 +17,10 @@ alias lal lla
 alias d  docker
 alias g  git
 alias k  kubectl
-alias kc 'set ARG (kubectl config get-contexts -o=name | fzf); if test -n $ARG; kubectl config use-context $ARG; end;'
 alias r  ranger
 alias v  nvim
+
+# git
+alias gma 'git checkout master'
+alias grbma 'git rebase master'
 
