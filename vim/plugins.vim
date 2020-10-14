@@ -20,9 +20,6 @@ Plug 'overcache/NeoSolarized'
 " specific file type is opened.
 Plug 'sheerun/vim-polyglot'
 
-" Better C++ highlighting.
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-
 " AIRLINE
 " Adds a nice status bar to the bottom.
 Plug 'vim-airline/vim-airline'
