@@ -55,6 +55,7 @@
     l = log --oneline
     lg = log --graph --decorate --all --pretty=oneline --abbrev-commit
     m = merge
+    ma = switch master
     mff = merge --ff-only
     mnff = merge --no-ff
     ps = push -u --follow-tags
@@ -64,6 +65,7 @@
     rb = rebase
     rba = rebase --abort
     rbc = rebase --continue
+    rbma = rebase master
     rbi = rebase -i
     re = restore
     rs = reset

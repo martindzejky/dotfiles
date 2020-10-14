@@ -20,7 +20,3 @@ alias k  kubectl
 alias r  ranger
 alias v  nvim
 
-# git
-alias gma 'git checkout master'
-alias grbma 'git rebase master'
-
