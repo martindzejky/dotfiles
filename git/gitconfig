@@ -74,6 +74,8 @@
     sua = submodule add
     suur = submodule update --remote
     suui = submodule update --init --recursive
+    sw = switch
+    swb = switch --create
     st = stash
     stp = stash pop
     t = tag
@@ -87,3 +89,4 @@
 
 [includeIf "gitdir:~/projects/work/"]
     path = .gitconfig-work
+
