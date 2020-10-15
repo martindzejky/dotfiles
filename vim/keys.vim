@@ -67,3 +67,16 @@ nnoremap <silent> <Leader>bb :Buffers<CR>
 " nerdtree
 nnoremap <silent> <Leader>1 :NERDTreeToggle<CR>
 
+" inline help
+nnoremap <silent> <Leader>h :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocActionAsync('doHover')
+  endif
+endfunction
+
+" highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
