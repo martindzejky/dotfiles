@@ -35,3 +35,6 @@ set updatetime=100
 " always show the signcolumn
 set signcolumn=yes
 
+" diff options for displaying vim diff
+set diffopt=filler,iwhite,iwhiteeol,vertical,internal
+
