@@ -2,13 +2,15 @@
 
 " leader keys
 let g:mapleader="\<Space>"
+let g:maplocalleader=","
 
 " disable q: and Q because I always press them
 " by mistake and I never actually use them
 map q: <Nop>
 nnoremap Q <Nop>
 
-" amazing shortcuts
+" amazing shortcuts using fzf to search
+" through all vim commands and help pages
 nnoremap <silent> <Leader><Leader> :Commands<CR>
 nnoremap <silent> <Leader>? :Helptags<CR>
 
@@ -40,21 +42,21 @@ nmap ;D <Plug>(coc-diagnostic-prev)
 nmap ;d <Plug>(coc-diagnostic-next)
 
 " navigation to definitions and references
-nnoremap <silent> <Leader>gd <Plug>(coc-definition)
-nnoremap <silent> <Leader>gi <Plug>(coc-implementation)
-nnoremap <silent> <Leader>gr <Plug>(coc-references)
+nnoremap <silent> <LocalLeader>d <Plug>(coc-definition)
+nnoremap <silent> <LocalLeader>i <Plug>(coc-implementation)
+nnoremap <silent> <LocalLeader>u <Plug>(coc-references)
 
 " refactoring
-nnoremap <silent> <Leader>rn <Plug>(coc-rename)
+nnoremap <silent> <LocalLeader>rn <Plug>(coc-rename)
 
 " git
 nnoremap <silent> <Leader>gaa :Git add --all<CR>
 nnoremap <silent> <Leader>gbr :Git branch<CR>
 nnoremap <silent> <Leader>gbl :Git blame<CR>
 nnoremap <silent> <Leader>gco :Git commit<CR>
-nnoremap <silent> <Leader>gce :Git checkout<CR>
-nnoremap <silent> <Leader>gd :Git diff<CR>
+nnoremap <silent> <Leader>gd :Gdiffsplit<CR>
 nnoremap <silent> <Leader>gs :Git<CR>
+nnoremap <silent> <Leader>gg :Git<CR>
 
 nnoremap <silent> <Leader>ghp <Plug>(GitGutterPreviewHunk)
 nnoremap <silent> <Leader>ghs <Plug>(GitGutterStageHunk)
@@ -68,7 +70,7 @@ nnoremap <silent> <Leader>bb :Buffers<CR>
 nnoremap <silent> <Leader>1 :NERDTreeToggle<CR>
 
 " inline help
-nnoremap <silent> <Leader>h :call <SID>show_documentation()<CR>
+nnoremap <silent> <LocalLeader>h :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
