@@ -25,10 +25,17 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" NERDTREE
-" Nice file explorer sidebar.
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Ranger
+" Nice file explorer with Vim key-bindings. The bclose plugin is a dependency.
+Plug 'rbgrouleff/bclose.vim'
+Plug 'francoiscabrol/ranger.vim'
+
+" Disable bclose and Ranger keymaps.
+let g:bclose_no_plugin_maps = 1
+let g:ranger_map_keys = 0
+
+" Replace the original netrw file explorer with Ranger.
+let g:ranger_replace_netrw = 1
 
 " Use the solarized colors for airline.
 let g:airline_theme='solarized'
