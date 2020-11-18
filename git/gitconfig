@@ -89,6 +89,7 @@
 [include]
     path = .gitconfig-system-specific
 
-[includeIf "gitdir:~/projects/work/"]
+# https://git-scm.com/docs/git-config#_conditional_includes
+[includeIf "gitdir:**/projects/work/**"]
     path = .gitconfig-work
 
