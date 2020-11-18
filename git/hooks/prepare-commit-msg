@@ -29,3 +29,10 @@ if test -n $jiraTicket
         mv {$commitFile}.tmp $commitFile
     end
 end
+
+# finally, if the project has any existing
+# hook configured, run it now (it is not run automatically
+# when a global hook is configured)
+if test -e ./.git/hooks/prepare-commit-msg
+    command sh ./.git/hooks/prepare-commit-msg
+end

@@ -14,6 +14,7 @@
 [core]
     editor = nvim
     ignorecase = false
+    hooksPath = ~/.githooks
 
 [color]
     diff = auto
@@ -87,9 +88,9 @@
     last = show --name-only
 
 [include]
-    path = .gitconfig-system-specific
+    path = ~/.gitconfig-system-specific
 
 # https://git-scm.com/docs/git-config#_conditional_includes
 [includeIf "gitdir:**/projects/work/**"]
-    path = .gitconfig-work
+    path = ~/.gitconfig-work
 
