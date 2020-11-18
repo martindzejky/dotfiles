@@ -10,7 +10,7 @@ call plug#begin(stdpath('data') . '/plugged')
 " BASICS
 
 " Contains many useful defaults for Vim. Some of the options are overwritten
-" at the bottom of this file.
+" in `overwrites.vim` file.
 Plug 'liuchengxu/vim-better-default'
 
 " Colors <3
@@ -19,6 +19,9 @@ Plug 'overcache/NeoSolarized'
 " Makes Vim handle all kinds of languages. Installs required plugins if a
 " specific file type is opened.
 Plug 'sheerun/vim-polyglot'
+
+" Support for .editorconfig.
+Plug 'editorconfig/editorconfig-vim'
 
 " AIRLINE
 " Adds a nice status bar to the bottom.
