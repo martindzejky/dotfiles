@@ -26,6 +26,7 @@
         ~/.gitconfig: git/gitconfig
         ~/.gitconfig-system-specific: git/gitconfig-system-specific
         ~/.gitconfig-work: git/gitconfig-work
+        ~/.githooks: git/hooks
 
         # vim
         ~/.vimrc: vim/vimrc

@@ -1,0 +1,31 @@
+#! /usr/bin/env fish
+
+# This hook checks the current branch name and puts
+# the jira ticket from it to the commit message if found.
+# If the branch name starts with WIP, the script sets
+# the commit message to WIP, too. Here's a template:
+# https://github.com/git/git/blob/master/templates/hooks--prepare-commit-msg.sample
+
+# commit file name is provided by Git
+set --local commitFile $argv[1]
+
+# regex used to fetch jira ticket (or WIP) in the branch name. It matches these:
+# - SDK-123-test-something
+# - WIP-progress
+set --local ticketRegex "^\\([[:upper:]]\\+-[[:digit:]]\\+\\|WIP\\)"
+
+# get the jira ticket from the branch name
+set --local jiraTicket (git rev-parse --abbrev-ref HEAD | grep -o $ticketRegex || echo '')
+
+if test -n $jiraTicket
+    # check whether the file does not already start with a jira ticket
+    if test -z (head -n 1 $commitFile | grep -o $ticketRegex || echo '')
+        # prepend the jira ticket to the commit file
+        # https://stackoverflow.com/a/63108036
+        begin
+            echo $jiraTicket
+            cat $commitFile
+        end > {$commitFile}.tmp
+        mv {$commitFile}.tmp $commitFile
+    end
+end
