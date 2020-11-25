@@ -32,6 +32,8 @@
     bl = blame
     b = branch
     bd = branch --delete
+    bD = branch --delete --force
+    bm = branch --move
     bs = bisect
     bsb = bisect bad
     bsg = bisect good
@@ -69,6 +71,7 @@
     rbma = rebase master
     rbi = rebase -i
     re = restore
+    res = restore --staged
     rs = reset
     rsh = reset --hard
     rss = reset --soft
