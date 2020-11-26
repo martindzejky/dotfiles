@@ -75,6 +75,12 @@ let g:ackprg = 'ag --vimgrep'
 " Removed because it mostly did not work in neovim, I don't know why. If I
 " later decide to use it again, use the git history on this file.
 
+" FORMATTING
+
+" Tabular
+" Used to line things up.
+Plug 'godlygeek/tabular'
+
 " COMPLETION
 " Modern completion engine.
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }

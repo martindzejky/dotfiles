@@ -1,4 +1,6 @@
-function kc
+function kc \
+    -w "kubectl config use-context" \
+    -d "Utility function to select Kubernetes context"
     if count $argv > /dev/null
         set ctx (kubectl config get-contexts -o name | fzf --exact --select-1 --exit-0 --query="$argv")
     else
@@ -11,4 +13,4 @@ function kc
         echo "no context found"
     end
 end
- 
+

@@ -1,4 +1,4 @@
-function mkdir --description="Create a directory and cd to it"
+function mkdir -d "Create a directory and cd to it"
     command mkdir $argv
 
     if test $status = 0
