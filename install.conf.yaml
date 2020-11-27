@@ -20,6 +20,7 @@
         ~/.config/fish/conf.d: fish/config
         ~/.config/fish/functions: fish/functions
         ~/.config/fish/fishfile: fish/fishfile
+        ~/.config/starship.toml: fish/starship.toml
         ~/.ssh/config: ssh/config
 
         # git
