@@ -1,6 +1,6 @@
 # GIT ALIASES
 # Moved from .gitconfig to get rid of that
-# once unnecessary space key in 'g sw'. .gitconfig
+# one unnecessary space key in 'g sw'. .gitconfig
 # is now cleaner and I save a few key presses.
 #
 # Also, there are some additional git shortcuts in
@@ -13,8 +13,6 @@ alias gaacoa  "git add --all && git commit --amend --no-edit"
 alias gaacoae "git add --all && git commit --amend"
 alias gbl     "git blame"
 alias gb      "git branch"
-alias gbd     "git branch --delete"
-alias gbD     "git branch --delete --force"
 alias gbm     "git branch --move"
 alias gbs     "git bisect"
 alias gbsb    "git bisect bad"
