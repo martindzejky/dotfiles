@@ -2,18 +2,19 @@ function gsw \
     -w "git switch" \
     -d "Switch git branches"
 
-    set branches (git for-each-ref --format='%(refname:short)' 'refs/heads/*')
+    set selected (fzf-branches $argv)
 
-    if count $argv > /dev/null
-        set branch (echo $branches | fzf --select-1 --exit-0 --query="$argv")
-    else
-        set branch (echo $branches | fzf)
+    switch $status
+        case 1
+            # not found
+            echo "no branch found"
+            return
+
+        case 130
+            # fzf cancelled
+            return
     end
 
-    if test -n $branch
-        git switch $branch
-    else
-        echo "no branch found"
-    end
+    git switch $selected
 end
 

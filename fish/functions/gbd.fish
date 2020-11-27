@@ -2,29 +2,17 @@ function gbd \
     -w "git branch" \
     -d "Delete git branches"
 
-    set branches (git for-each-ref --format='%(refname:short)' 'refs/heads/*')
+    set selected (fzf-branches $argv)
 
-    # TODO: refactor!
-    if count $argv > /dev/null
-        set selected (
-            for b in $branches; echo $b; end \
-            | fzf --select-1 --exit-0 --query="$argv"
-        )
-    else
-        set selected (
-            for b in $branches; echo $b; end \
-            | fzf --multi
-        )
-    end
+    switch $status
+        case 1
+            # not found
+            echo "no branch found"
+            return
 
-    if test $status -eq 130
-        # fzf cancelled
-        return
-    end
-
-    if not count $selected > /dev/null
-        echo "no branch found"
-        return
+        case 130
+            # fzf cancelled
+            return
     end
 
     # try to delete each branch separately and if
