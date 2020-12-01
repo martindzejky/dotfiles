@@ -2,6 +2,12 @@ function gsw \
     -w "git switch" \
     -d "Switch git branches"
 
+    # special case
+    if test "$argv" = "-"
+        git switch -
+        return
+    end
+
     set selected (fzf-branches $argv)
 
     switch $status
