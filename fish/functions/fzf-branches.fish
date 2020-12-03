@@ -2,7 +2,7 @@ function fzf-branches \
     -w "git branch" \
     -d "Select a branch using fzf"
 
-    set branches (git for-each-ref --format='%(refname:short)' 'refs/heads/*')
+    set branches (git for-each-ref --format='%(refname:short)' 'refs/heads/*' 'refs/remotes/**')
 
     # if there are no branches, return nothing
     if not count $branches > /dev/null
