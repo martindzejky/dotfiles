@@ -65,7 +65,7 @@ Plug 'airblade/vim-gitgutter'
 " Fuzzy search all the things! This plugin allows to fuzzy-search files, help
 " files, commands, buffers, etc. I am probably using only 10% of it.
 " TODO: set up keymaps for commands and customize options
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 " use ag for the ack.vim plugin
