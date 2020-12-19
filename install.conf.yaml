@@ -16,6 +16,9 @@
 
 # link configuration files
 -   link:
+        # term
+        ~/.alacritty.yml: alacritty/alacritty.yml
+
         # shell
         ~/.config/fish/conf.d: fish/config
         ~/.config/fish/functions: fish/functions

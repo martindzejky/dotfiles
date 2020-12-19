@@ -1,0 +1,13 @@
+# env variables
+env:
+    TERM: xterm-256color
+
+# font
+font:
+    size: 13
+    normal:
+        family: JetBrainsMono Nerd Font
+
+# colors
+# TODO
+
