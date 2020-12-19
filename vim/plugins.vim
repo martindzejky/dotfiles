@@ -28,20 +28,23 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Ranger
-" Nice file explorer with Vim key-bindings. The bclose plugin is a dependency.
-Plug 'rbgrouleff/bclose.vim'
-Plug 'francoiscabrol/ranger.vim'
-
-" Disable bclose and Ranger keymaps.
-let g:bclose_no_plugin_maps = 1
-let g:ranger_map_keys = 0
-
-" Replace the original netrw file explorer with Ranger.
-let g:ranger_replace_netrw = 1
-
 " Use the solarized colors for airline.
 let g:airline_theme='solarized'
+
+" Utilize the font.
+let g:airline_powerline_fonts = 1
+
+" NERDTREE
+" Nice file explorer sidebar.
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" NERDCOMMENTER
+" Quickly comment and un-comment lines.
+Plug 'preservim/nerdcommenter'
+
+" Disable the default key mappings.
+let g:NERDCreateDefaultMappings = 1
 
 " CURSORS & NAVIGATION
 
@@ -116,6 +119,12 @@ Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
 Plug 'voldikss/coc-cmake', {'do': 'yarn install --frozen-lockfile'}
+
+" ICONS
+
+" DEVICONS
+" Adds cool filetype icons. Must be the last plugin.
+Plug 'ryanoasis/vim-devicons'
 
 " end the list of plugins
 call plug#end()

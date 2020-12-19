@@ -24,6 +24,10 @@ nnoremap <silent> <Leader>ff :Files<CR>
 nnoremap <silent> <Leader>fg :GFiles?<CR>
 nnoremap <silent> <Leader>fw :write<CR>
 
+" project-specific keybindings
+nnoremap <silent> <Leader>pt :NERDTree<CR>
+nnoremap <silent> <Leader>pf :NERDTreeFind<CR>
+
 " dotfile specific
 nnoremap <silent> <Leader>fde :edit $MYVIMRC<CR>
 nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
@@ -66,9 +70,6 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 " buffers
 nnoremap <silent> <Leader>bb :Buffers<CR>
 
-" nerdtree
-nnoremap <silent> <Leader>1 :NERDTreeToggle<CR>
-
 " inline help
 nnoremap <silent> <LocalLeader>h :call <SID>show_documentation()<CR>
 
@@ -82,3 +83,4 @@ endfunction
 
 " highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
