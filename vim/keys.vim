@@ -20,7 +20,7 @@ nnoremap <silent> <Leader>wo <C-w>o
 nnoremap <silent> <Leader>wh <C-w>s
 
 " file-specific keybindings
-nnoremap <silent> <Leader>ff :Files<CR>
+nnoremap <silent> <Leader>ff :GFiles<CR>
 nnoremap <silent> <Leader>fg :GFiles?<CR>
 nnoremap <silent> <Leader>fw :write<CR>
 
