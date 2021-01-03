@@ -6,7 +6,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 brew "arduino-cli"
-#brew "ccls" - this is compiled from source to have the latest version
 brew "cmake"
 brew "fd"
 brew "fish"
@@ -26,6 +25,7 @@ brew "ranger"
 brew "starship"
 brew "telepresence"
 brew "the_silver_searcher"
+brew "tmux"
 brew "yarn"
 brew "zoxide"
 
