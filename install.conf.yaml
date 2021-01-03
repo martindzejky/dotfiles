@@ -17,6 +17,7 @@
 # link configuration files
 -   link:
         # term
+        ~/.hushlogin: login/.hushlogin
         ~/.config/alacritty: alacritty
 
         # shell
