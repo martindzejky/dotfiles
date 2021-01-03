@@ -16,6 +16,9 @@
     ignorecase = false
     hooksPath = ~/.githooks
 
+[init]
+    defaultBranch = master
+
 [color]
     diff = auto
     ui = auto
