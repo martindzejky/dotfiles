@@ -19,11 +19,11 @@ nunmap <CR>
 " quick save-all-and-quit shortcut
 nnoremap <silent> <Leader>Q :wqa<CR>
 
-" automatically switch between light and dark theme based on
-" iTerm's theme (which is in turn based on OS)
-if $ITERM_PROFILE == "Dark"
-    set background=dark
-else
+" automatically switch between light and dark theme
+silent ! is-os-dark-mode
+if v:shell_error
     set background=light
+else
+    set background=dark
 endif
 
