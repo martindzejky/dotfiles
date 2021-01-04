@@ -53,6 +53,10 @@ nnoremap <silent> <LocalLeader>u <Plug>(coc-references)
 " refactoring
 nnoremap <silent> <LocalLeader>rn <Plug>(coc-rename)
 
+" commenting
+nnoremap <silent> <LocalLeader>c :call NERDComment('n', 'toggle')<CR>
+xnoremap <silent> <LocalLeader>c :call NERDComment('x', 'toggle')<CR>
+
 " git
 nnoremap <silent> <Leader>gaa :Git add --all<CR>
 nnoremap <silent> <Leader>gbr :Git branch<CR>

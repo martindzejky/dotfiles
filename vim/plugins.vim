@@ -44,7 +44,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter'
 
 " Disable the default key mappings.
-let g:NERDCreateDefaultMappings = 1
+let g:NERDCreateDefaultMappings = 0
+
+" Add a space after the comment delimeters.
+let g:NERDSpaceDelims = 1
 
 " CURSORS & NAVIGATION
 
@@ -57,6 +60,7 @@ let g:EasyMotion_smartcase=1
 let g:EasyMotion_do_mapping=0
 
 " Allows the use of multiple cursors.
+" TODO: this plugin is deprecated
 Plug 'terryma/vim-multiple-cursors'
 
 " GIT
