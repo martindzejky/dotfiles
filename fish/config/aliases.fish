@@ -14,10 +14,9 @@ alias lla "ls -AlF"
 alias lal lla
 
 # apps
-alias d   docker
-alias g   git
-alias k   kubectl
-alias r   ranger
-alias v   nvim
-alias vim nvim
+alias d docker
+alias g git
+alias k kubectl
+alias r ranger
+alias v nvim
 
