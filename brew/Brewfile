@@ -25,7 +25,6 @@ brew "ranger"
 brew "starship"
 brew "telepresence"
 brew "the_silver_searcher"
-brew "tmux"
 brew "yarn"
 brew "zoxide"
 
