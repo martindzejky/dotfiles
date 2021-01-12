@@ -3,7 +3,7 @@
 
 # n - node version manager
 set -gx N_PREFIX ~/.n
-set -gx PATH $N_PREFIX/bin $PATH 
+set -gx PATH $N_PREFIX/bin $PATH
 set -gx NODE_OPTIONS "--max_old_space_size=4096"
 
 # android
@@ -22,9 +22,6 @@ set -gx PATH $PATH ~/.local/bin
 if test -d /Applications/Postgres.app/Contents/Versions/latest/bin/
     set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin/ $PATH
 end
-
-# my own scripts
-set -gx PATH ~/.dotfiles/scripts/bin $PATH
 
 # gettext for spacemacs
 # https://github.com/bbatsov/projectile/issues/1302

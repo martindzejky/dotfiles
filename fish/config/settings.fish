@@ -10,11 +10,6 @@ set -gx MANPAGER $PAGER
 # fish greeting
 set -g fish_greeting ""
 
-# prompt colors
-# https://github.com/rafaelrinaldi/pure
-set -g pure_color_success blue
-set -g pure_color_mute normal
-
 # locale
 set -gx LC_ALL en_US.UTF-8
 set -gx LANG en_US.UTF-8
