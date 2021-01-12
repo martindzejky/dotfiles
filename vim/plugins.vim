@@ -84,10 +84,6 @@ let g:ackprg = 'ag --vimgrep'
 
 " FORMATTING
 
-" Tabular
-" Used to line things up.
-Plug 'godlygeek/tabular'
-
 " COMPLETION
 " Modern completion engine.
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
