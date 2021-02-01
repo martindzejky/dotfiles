@@ -47,24 +47,29 @@ nnoremap Q <Nop>
 " magic action keybindings
 nnoremap <silent> <Leader><Leader> :action GotoAction<CR>
 nnoremap <silent> <Leader>ff :action GotoFile<CR>
-nnoremap <silent> <Leader>bb :action RecentFiles<CR>
+nnoremap <silent> <Leader>b :action RecentFiles<CR>
 
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o
 nnoremap <silent> <Leader>wh <C-w>s
+nnoremap <silent> <Leader>ws <C-w>s
+nnoremap <silent> <Leader>wv <C-w>v
 nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
 
 " file-specific keybindings
 nnoremap <silent> <Leader>fw :write<CR>
+nnoremap <silent> <Leader>fs :write<CR>
+nnoremap <silent> <Leader>fo :action OpenFile<CR>
 
 " refactoring
 nnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
+vnoremap <silent> <Leader>rr :action Refactorings.QuickListPopupAction<CR>
 nnoremap <silent> <Leader>rn :action RenameElement<CR>
+vnoremap <silent> <Leader>rn :action RenameElement<CR>
 
 " projects
-nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
-nnoremap <silent> <Leader>pm :action ManageRecentProjects<CR>
+nnoremap <silent> <Leader>p :action RecentProjectListGroup<CR>
 
 " jumping around the file using vim-easymotion plugin
 nmap ;; <Plug>(easymotion-bd-fn)
