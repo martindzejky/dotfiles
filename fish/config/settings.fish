@@ -2,10 +2,10 @@
 # configuring base variables
 
 # editors, pagers
-set -gx BROWSER open
-set -gx EDITOR nvim
-set -gx PAGER less
-set -gx MANPAGER $PAGER
+set -gx BROWSER  open
+set -gx EDITOR   nvim
+set -gx PAGER    less
+set -gx MANPAGER less
 
 # fish greeting
 set -g fish_greeting ""

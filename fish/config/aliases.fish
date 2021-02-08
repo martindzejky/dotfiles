@@ -11,7 +11,6 @@ alias l   "ls -F"
 alias la  "ls -AF"
 alias ll  "ls -lF"
 alias lla "ls -AlF"
-alias lal lla
 
 # apps
 alias d docker
