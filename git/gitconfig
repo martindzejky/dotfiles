@@ -33,3 +33,7 @@
 [includeIf "gitdir:**/projects/work/**"]
     path = ~/.gitconfig-work
 
+# for some reason, this does not work when it is
+# in `gitconfig-work`. git just does not register it
+[url "git@gitlab.exponea.com:"]
+    insteadOf = https://gitlab.exponea.com/
