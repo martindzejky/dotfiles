@@ -5,7 +5,9 @@
 
 if not functions --query fisher
     echo "installing fisher"
-    curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+    # https://github.com/jorgebucaran/fisher
+    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 end
 
 echo "updating fisher packages"
