@@ -2,7 +2,7 @@ function fzf-branches \
     -w "git branch" \
     -d "Select a branch using fzf"
 
-    set branches (git for-each-ref --format='%(refname:short)' 'refs/heads/*' 'refs/remotes/**')
+    set branches (git for-each-ref refs/heads refs/remotes --sort=-committerdate --color=always --format='%(refname:short) %(color:green)%(committerdate:relative) %(color:blue)%(subject) %(color:magenta)%(authorname)%(color:reset)')
 
     # if there are no branches, return nothing
     if not count $branches > /dev/null
@@ -14,12 +14,12 @@ function fzf-branches \
     if count $argv > /dev/null
         set selected (
             for b in $branches; echo $b; end \
-            | fzf --multi --select-1 --exit-0 --query="$argv"
+            | fzf --multi --ansi --select-1 --exit-0 --query="$argv"
         )
     else
         set selected (
             for b in $branches; echo $b; end \
-            | fzf --multi
+            | fzf --multi --ansi
         )
     end
 
