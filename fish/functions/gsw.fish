@@ -8,7 +8,7 @@ function gsw \
         return
     end
 
-    set selected (fzf-branches $argv)
+    set selected (fzf-branches --remote $argv)
 
     switch $status
         case 1
