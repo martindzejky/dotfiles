@@ -1,4 +1,7 @@
-function gshow -d "Show the last Git commit"
-    git show --name-only
+function gshow
+    -w "git show" \
+    -d "Show a git commit listing only file names"
+
+    git show --name-only $argv
 end
 
