@@ -49,6 +49,7 @@ nnoremap <silent> <Leader>gbr :Git branch<CR>
 nnoremap <silent> <Leader>gbl :Git blame<CR>
 nnoremap <silent> <Leader>gco :Git commit<CR>
 nnoremap <silent> <Leader>gd :Gdiffsplit<CR>
+nnoremap <silent> <Leader>gl :Commits!<CR>
 nnoremap <silent> <Leader>gs :Git<CR>
 nnoremap <silent> <Leader>gg :Git<CR>
 
