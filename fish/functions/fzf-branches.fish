@@ -54,7 +54,8 @@ function fzf-branches \
     end
 
     for s in $selected
-        echo $s
+        # return just the branch name
+        echo $s | cut -d " " -f 1
     end
 end
 
