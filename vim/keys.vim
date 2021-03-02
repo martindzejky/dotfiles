@@ -60,3 +60,7 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 " buffers
 nnoremap <silent> <Leader>bb :Buffers<CR>
 
+" searching
+nnoremap          <LocalLeader>/ /
+nnoremap <silent> <Leader>/ :Ag<CR>
+
