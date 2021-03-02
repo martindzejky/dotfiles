@@ -38,20 +38,6 @@ nnoremap <silent> <Leader>fdu :PlugUpdate<CR>
 nmap ;; <Plug>(easymotion-bd-fn)
 nmap ;l <Plug>(easymotion-bd-jk)
 nmap ;n <Plug>(easymotion-bd-n)
-" inlude jumping to hunks
-nmap ;H <Plug>(GitGutterPrevHunk)
-nmap ;h <Plug>(GitGutterNextHunk)
-" include jumping to diagnostic information
-nmap ;D <Plug>(coc-diagnostic-prev)
-nmap ;d <Plug>(coc-diagnostic-next)
-
-" navigation to definitions and references
-nnoremap <silent> <LocalLeader>d <Plug>(coc-definition)
-nnoremap <silent> <LocalLeader>i <Plug>(coc-implementation)
-nnoremap <silent> <LocalLeader>u <Plug>(coc-references)
-
-" refactoring
-nnoremap <silent> <LocalLeader>rn <Plug>(coc-rename)
 
 " commenting
 nnoremap <silent> <LocalLeader>c :call NERDComment('n', 'toggle')<CR>
@@ -73,18 +59,4 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 
 " buffers
 nnoremap <silent> <Leader>bb :Buffers<CR>
-
-" inline help
-nnoremap <silent> <LocalLeader>h :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocActionAsync('doHover')
-  endif
-endfunction
-
-" highlight the symbol and its references when holding the cursor
-autocmd CursorHold * silent call CocActionAsync('highlight')
 

@@ -37,7 +37,6 @@ let g:airline_powerline_fonts = 1
 " NERDTREE
 " Nice file explorer sidebar.
 Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " NERDCOMMENTER
 " Quickly comment and un-comment lines.
@@ -60,13 +59,14 @@ let g:EasyMotion_smartcase=1
 let g:EasyMotion_do_mapping=0
 
 " Allows the use of multiple cursors.
-" TODO: this plugin is deprecated
-Plug 'terryma/vim-multiple-cursors'
+" TODO: learn to use and set up keys
+Plug 'mg979/vim-visual-multi'
 
 " GIT
 " Git integrations, not much to be said here.
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " FZF
 " Fuzzy search all the things! This plugin allows to fuzzy-search files, help
@@ -78,62 +78,10 @@ Plug 'junegunn/fzf.vim'
 " use ag for the ack.vim plugin
 let g:ackprg = 'ag --vimgrep'
 
-" WHICH KEY
-" Removed because it mostly did not work in neovim, I don't know why. If I
-" later decide to use it again, use the git history on this file.
-
-" FORMATTING
-
-" COMPLETION
-" Modern completion engine.
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-
-" Better support for .jsonc files which are used by coc.nvim plugin.
-" https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file
-autocmd FileType json syntax match Comment +\/\/.\+$+
-
-" Don't pass messages to |ins-completion-menu|. Recommended for coc.nvim.
-set shortmess+=c
-
-" Use CTRL+SPACE to trigger completion.
-inoremap <silent><expr> <C-Space> coc#refresh()
-
-" Use TAB to trigger completion.
-inoremap <silent><expr> <Tab>
-    \ pumvisible() ? "\<C-n>" :
-    \ <SID>check_back_space() ? "\<Tab>" :
-    \ coc#refresh()
-
-" Use TAB and SHIFT+TAB to navigate completion.
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Use ENTER to confirm completion.
-inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
-" COC EXTENSIONS
-" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#use-vims-plugin-manager-for-coc-extension
-Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
-Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-Plug 'voldikss/coc-cmake', {'do': 'yarn install --frozen-lockfile'}
-
-" ICONS
-
 " DEVICONS
 " Adds cool filetype icons. Must be the last plugin.
 Plug 'ryanoasis/vim-devicons'
 
 " end the list of plugins
 call plug#end()
-
-" UTILITIES
-
-" Used by the coc.nvim configuration to handle TAB key.
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
 

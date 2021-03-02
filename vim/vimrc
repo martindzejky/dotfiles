@@ -3,5 +3,4 @@
 " configuration. Vim just imports parts of it.
 
 source ~/.config/nvim/general.vim
-source ~/.config/nvim/keys.vim
 
