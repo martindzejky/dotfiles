@@ -36,9 +36,6 @@ map <C-P> <A-P>
 map <C-X> <A-X>
 map g<C-N> g<A-N>
 
-" increase the waiting time for keycodes
-set timeoutlen=1000
-
 " disable q: and Q because I always press them
 " by mistake and I never actually use them
 map q: <Nop>
@@ -47,6 +44,13 @@ nnoremap Q <Nop>
 " magic action keybindings
 nnoremap <silent> <Leader><Leader> :action GotoAction<CR>
 nnoremap <silent> <Leader>ff :action GotoFile<CR>
+
+" <Leader><Leader> stopped working for some reason so
+" here's a replacement. I reported the issue here:
+" https://youtrack.jetbrains.com/issue/VIM-2248
+nnoremap <silent> <Leader>a :action GotoAction<CR>
+
+" recent files
 nnoremap <silent> <Leader>b :action RecentFiles<CR>
 
 " window-handling keybindings

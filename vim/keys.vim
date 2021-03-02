@@ -59,7 +59,7 @@ nnoremap <silent> <Leader>ghu <Plug>(GitGutterUndoHunk)
 nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 
 " buffers
-nnoremap <silent> <Leader>bb :Buffers<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
 
 " searching
 nnoremap          <LocalLeader>/ /
