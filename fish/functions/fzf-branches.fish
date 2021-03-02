@@ -1,8 +1,28 @@
 function fzf-branches \
     -w "git branch" \
-    -d "Select a branch using fzf"
+    -d "Select a git branch using fzf"
 
-    set branches (git for-each-ref refs/heads refs/remotes --sort=-committerdate --color=always --format='%(refname:short) %(color:green)%(committerdate:relative) %(color:blue)%(subject) %(color:magenta)%(authorname)%(color:reset)')
+    # parse argv
+    argparse "h/help" "r/remote" -- $argv
+    or return
+
+    # display help if requested
+    if count $_flag_help > /dev/null
+        echo "usage: fzf-branches [--remote] [<query>]"
+        echo
+        echo "Select a git branch using fzf. If --remote is set,"
+        echo "also search in remote branches."
+
+        return
+    end
+
+    if count $_flag_remote > /dev/null
+        set refs refs/heads refs/remotes
+    else
+        set refs refs/heads
+    end
+
+    set branches (git for-each-ref $refs --sort=-committerdate --color=always --format='%(refname:short) %(color:green)%(committerdate:relative) %(color:blue)%(subject) %(color:magenta)%(authorname)%(color:reset)')
 
     # if there are no branches, return nothing
     if not count $branches > /dev/null
