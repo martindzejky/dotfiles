@@ -7,7 +7,7 @@ function gl \
         --abbrev-commit \
         --decorate \
         --all \
-        --format=format:"%h %C(green)%cr %C(blue)%s %C(magenta)%an %C(reset)" \
+        --format=format:"%h%C(auto)%d %C(green)%cr %C(blue)%s %C(magenta)%an %C(reset)" \
         $argv
 end
 
