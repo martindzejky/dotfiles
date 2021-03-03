@@ -1,4 +1,4 @@
-function gshow
+function gshow \
     -w "git show" \
     -d "Show a git commit listing only file names"
 
