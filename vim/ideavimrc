@@ -24,13 +24,16 @@ nnoremap <silent> <Leader>Q :wqa<CR>
 " enable built-in ideavim plugins
 set easymotion
 set multiple-cursors
+set NERDTree
 
 " settings
 set ideajoin " join lines using IDE's magic
 set ideamarks " sync vim's marks and IDE's bookmarks
 set idearefactormode visual " refactor mode
-set NERDTree
 set showmode " show current vim mode
+
+" disable default easymotion key mappings
+let g:EasyMotion_do_mapping=0
 
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
@@ -46,11 +49,6 @@ nnoremap Q <Nop>
 " magic action keybindings
 nnoremap <silent> <Leader><Leader> :action GotoAction<CR>
 nnoremap <silent> <Leader>ff :action GotoFile<CR>
-
-" <Leader><Leader> stopped working for some reason so
-" here's a replacement. I reported the issue here:
-" https://youtrack.jetbrains.com/issue/VIM-2248
-nnoremap <silent> <Leader>a :action GotoAction<CR>
 
 " recent files
 nnoremap <silent> <Leader>b :action RecentFiles<CR>
