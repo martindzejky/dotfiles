@@ -26,9 +26,11 @@ set easymotion
 set multiple-cursors
 
 " settings
-set ideamarks
-set idearefactormode visual
-set showmode
+set ideajoin " join lines using IDE's magic
+set ideamarks " sync vim's marks and IDE's bookmarks
+set idearefactormode visual " refactor mode
+set NERDTree
+set showmode " show current vim mode
 
 " remap conflicting keymaps for multiple-cursors plugin
 map <C-N> <A-N>
@@ -73,7 +75,9 @@ nnoremap <silent> <Leader>rn :action RenameElement<CR>
 vnoremap <silent> <Leader>rn :action RenameElement<CR>
 
 " projects
-nnoremap <silent> <Leader>p :action RecentProjectListGroup<CR>
+nnoremap <silent> <Leader>pp :action RecentProjectListGroup<CR>
+nnoremap <silent> <Leader>pt :NERDTree<CR>
+nnoremap <silent> <Leader>pf :NERDTreeFind<CR>
 
 " jumping around the file using vim-easymotion plugin
 nmap ;; <Plug>(easymotion-bd-fn)
