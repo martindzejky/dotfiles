@@ -22,7 +22,7 @@ nunmap <CR>
 nnoremap <silent> <Leader>Q :wqa<CR>
 
 " enable built-in ideavim plugins
-set easymotion
+" set easymotion " TODO: disabled until AlexPl292/IdeaVim-EasyMotion#52
 set multiple-cursors
 set NERDTree
 
@@ -78,7 +78,8 @@ nnoremap <silent> <Leader>pt :NERDTree<CR>
 nnoremap <silent> <Leader>pf :NERDTreeFind<CR>
 
 " jumping around the file using vim-easymotion plugin
-nmap ;; <Plug>(easymotion-bd-fn)
-nmap ;l <Plug>(easymotion-bd-jk)
-nmap ;n <Plug>(easymotion-bd-n)
+" TODO: disabled until AlexPl292/IdeaVim-EasyMotion#52
+" nmap ;; <Plug>(easymotion-bd-fn)
+" nmap ;l <Plug>(easymotion-bd-jk)
+" nmap ;n <Plug>(easymotion-bd-n)
 
