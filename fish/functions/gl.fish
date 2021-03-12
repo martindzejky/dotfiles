@@ -7,7 +7,7 @@ function gl \
         # display the git log
         git log \
             --graph \
-            --color=always \
+            --color \
             --format=format:"%h%C(auto)%d %C(green)%cr %C(blue)%s %C(magenta)%an %C(reset)" \
             $argv |
 
