@@ -17,7 +17,10 @@
 [core]
     editor = nvim
     ignorecase = false
-    hooksPath = ~/.githooks
+
+    # This is disabled because it overwrites any project-specific hooks.
+    # Instead, use symbolic links to link projects to my own hooks.
+    # hooksPath = ~/.githooks
 
 [init]
     defaultBranch = master
