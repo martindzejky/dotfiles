@@ -11,6 +11,9 @@
 [push]
     default = current
 
+[rebase]
+    autosquash = true
+
 [core]
     editor = nvim
     ignorecase = false
