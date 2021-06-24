@@ -2,13 +2,21 @@ function gsw \
     -w "git switch" \
     -d "Switch git branches"
 
+    # parse argv
+    argparse "r/remote" -- $argv
+    or return
+
     # special case
     if test "$argv" = "-"
         git switch -
         return
     end
 
-    set selected (fzf-branches --remote $argv)
+    if count $_flag_remote > /dev/null
+        set selected (fzf-branches --remote $argv)
+    else
+        set selected (fzf-branches $argv)
+    end
 
     switch $status
         case 1
