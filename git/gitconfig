@@ -29,6 +29,15 @@
     diff = auto
     ui = auto
 
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    features = side-by-side line-numbers decorations
+
 [pull]
     ff = only
 

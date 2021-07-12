@@ -3,8 +3,8 @@
 # https://github.com/dandavison/delta
 
 if is-os-dark-mode
-    set BAT_THEME "Solarized (dark)"
+    set -gx BAT_THEME "Solarized (dark)"
 else
-    set BAT_THEME "Solarized (light)"
+    set -gx BAT_THEME "Solarized (light)"
 end
 
