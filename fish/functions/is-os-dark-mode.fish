@@ -1,10 +1,14 @@
 function is-os-dark-mode \
     -d "Checks whether the OS is in dark mode"
 
-    set -l result (
+    if set --query OS_DARK_MODE
+        return (test "$OS_DARK_MODE" = "true")
+    end
+
+    set -g OS_DARK_MODE (
         osascript -l JavaScript -e 'Application("System Events").appearancePreferences.darkMode()'
     )
 
-    return (test "$result" = "true")
+    return (test "$OS_DARK_MODE" = "true")
 end
 
