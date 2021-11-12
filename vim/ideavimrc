@@ -59,6 +59,7 @@ nnoremap <silent> <Leader>wo <C-w>o
 nnoremap <silent> <Leader>wh <C-w>s
 nnoremap <silent> <Leader>ws <C-w>s
 nnoremap <silent> <Leader>wv <C-w>v
+nnoremap <silent> <Leader>ww <C-w>w
 nnoremap <silent> <Leader>wx :action ChangeSplitOrientation<CR>
 
 " file-specific keybindings
