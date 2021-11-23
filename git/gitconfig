@@ -18,10 +18,6 @@
     editor = nvim
     ignorecase = false
 
-    # This is disabled because it overwrites any project-specific hooks.
-    # Instead, use symbolic links to link projects to my own hooks.
-    # hooksPath = ~/.githooks
-
 [init]
     defaultBranch = master
 
@@ -43,12 +39,3 @@
 
 [include]
     path = ~/.gitconfig-system-specific
-
-# https://git-scm.com/docs/git-config#_conditional_includes
-[includeIf "gitdir:**/projects/work/**"]
-    path = ~/.gitconfig-work
-
-# for some reason, this does not work when it is
-# in `gitconfig-work`. git just does not register it
-[url "git@gitlab.exponea.com:"]
-    insteadOf = https://gitlab.exponea.com/

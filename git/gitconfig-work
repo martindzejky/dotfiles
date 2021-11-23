@@ -1,7 +1,0 @@
-[user]
-    name = Martin Jakubik
-    email = martin.jakubik@exponea.com
-
-[url "git@gitlab.exponea.com:"]
-	insteadOf = https://gitlab.exponea.com/
-
