@@ -41,7 +41,6 @@
 # set up the home directory structure
 -   create:
         - ~/projects
-        - ~/projects/work
 
 # install brew (automatic install does not work)
 -   shell:
@@ -60,8 +59,4 @@
         - command: scripts/install/fisher.fish
           description: Install fisher
           stdout: true
-
-# install brew packages
-- brewfile:
-      - brew/Brewfile
 
