@@ -3,7 +3,6 @@
 User martindzejky
 ForwardAgent yes
 StrictHostKeyChecking no
-UseKeychain yes
 AddKeysToAgent yes
 IdentityFile ~/.ssh/id_rsa
 

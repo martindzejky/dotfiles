@@ -7,9 +7,11 @@ set -gx PATH $N_PREFIX/bin $PATH
 set -gx NODE_OPTIONS "--max_old_space_size=4096"
 
 # android
-set -gx JAVA_HOME (/usr/libexec/java_home)
-set -gx ANDROID_HOME /usr/local/share/android-sdk
-set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
+if test -e /usr/libexec/java_home
+    set -gx JAVA_HOME (/usr/libexec/java_home)
+    set -gx ANDROID_HOME /usr/local/share/android-sdk
+    set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
+end
 
 if test -d $ANDROID_HOME/platform-tools
     set -gx PATH $PATH "$ANDROID_HOME/platform-tools"
