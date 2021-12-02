@@ -1,6 +1,9 @@
 function is-os-dark-mode \
     -d "Checks whether the OS is in dark mode"
 
+    # TODO
+    return 2
+
     if set --query OS_DARK_MODE
         return (test "$OS_DARK_MODE" = "true")
     end
