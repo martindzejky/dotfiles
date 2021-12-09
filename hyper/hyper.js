@@ -18,6 +18,12 @@ module.exports = {
     copyOnSelect: false,
     defaultSSHApp: true,
 
+    // colors based on OS
+    hyperPrefersColorScheme: {
+        light: 'hyper-solarized-light',
+        dark: 'hyper-solarized-dark',
+    },
+
     // hyper-pane configuration
     paneNavigation: {
       hotkeys: {
@@ -33,7 +39,14 @@ module.exports = {
     }
   },
 
-  plugins: ["hypercwd", "hyper-pane", "hyperminimal", "hyper-solarized-light"],
+  plugins: [
+    "hypercwd",
+    "hyper-pane",
+    "hyperminimal",
+    "hyper-solarized-light",
+    "hyper-solarized-dark",
+    "hyper-prefers-color-scheme"
+  ],
 
   keymaps: {
     'tab:next': [
