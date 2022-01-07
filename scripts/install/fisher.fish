@@ -9,7 +9,3 @@ if not functions --query fisher
     # https://github.com/jorgebucaran/fisher
     curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 end
-
-echo "updating fisher packages"
-fisher
-
