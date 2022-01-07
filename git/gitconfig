@@ -6,7 +6,7 @@
     gpgsign = true
 
 [gpg]
-    program = /usr/bin/gpg
+    program = gpg
 
 [push]
     default = current
