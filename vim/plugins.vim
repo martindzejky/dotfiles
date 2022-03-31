@@ -77,6 +77,10 @@ Plug 'junegunn/fzf.vim'
 " use ag for the ack.vim plugin
 let g:ackprg = 'ag --vimgrep'
 
+" GODOT
+" Godot engine-related plugins to make Vim work with it.
+Plug 'habamax/vim-godot'
+
 " DEVICONS
 " Adds cool filetype icons. Must be the last plugin.
 Plug 'ryanoasis/vim-devicons'
