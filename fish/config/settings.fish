@@ -17,6 +17,3 @@ set -gx LANG en_US.UTF-8
 # gpg tty
 set -gx GPG_TTY (tty)
 
-# go modules
-set -gx GOPRIVATE gitlab.exponea.com
-
