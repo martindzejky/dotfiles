@@ -19,3 +19,6 @@ nunmap <CR>
 " quick save-all-and-quit shortcut
 nnoremap <silent> <Leader>Q :wqa<CR>
 
+" TODO: detect os dark mode
+set background=light
+
