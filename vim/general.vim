@@ -38,3 +38,7 @@ set signcolumn=yes
 " diff options for displaying vim diff
 set diffopt=filler,iwhite,iwhiteeol,vertical,internal
 
+" indentation
+set expandtab
+set shiftwidth=4
+

@@ -23,6 +23,7 @@ nnoremap <silent> <Leader>wh <C-w>s
 nnoremap <silent> <Leader>ff :Files<CR>
 nnoremap <silent> <Leader>fg :GFiles?<CR>
 nnoremap <silent> <Leader>fw :write<CR>
+nnoremap <silent> <Leader>fa :wall<CR>
 
 " project-specific keybindings
 nnoremap <silent> <Leader>pt :NERDTree<CR>
