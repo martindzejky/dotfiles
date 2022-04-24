@@ -32,7 +32,6 @@
         ~/.gitconfig-system-specific: git/gitconfig-system-specific
 
         # vim
-        ~/.vimrc: vim/vimrc
         ~/.ideavimrc: vim/ideavimrc
         ~/.config/nvim: vim
 
