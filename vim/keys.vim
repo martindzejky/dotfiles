@@ -17,13 +17,14 @@ nnoremap <silent> <Leader>? :Helptags<CR>
 " window-handling keybindings
 nnoremap <silent> <Leader>wc <C-w>c
 nnoremap <silent> <Leader>wo <C-w>o
-nnoremap <silent> <Leader>wh <C-w>s
+nnoremap <silent> <Leader>ws <C-w>s
+nnoremap <silent> <Leader>wv <C-w>v
+nnoremap <silent> <Leader>ww <C-w>w
 
 " file-specific keybindings
 nnoremap <silent> <Leader>ff :Files<CR>
+nnoremap <silent> <Leader>fs :wall<CR>
 nnoremap <silent> <Leader>fg :GFiles?<CR>
-nnoremap <silent> <Leader>fw :write<CR>
-nnoremap <silent> <Leader>fa :wall<CR>
 
 " project-specific keybindings
 nnoremap <silent> <Leader>pt :NERDTree<CR>
@@ -59,10 +60,11 @@ nnoremap <silent> <Leader>ghs <Plug>(GitGutterStageHunk)
 nnoremap <silent> <Leader>ghu <Plug>(GitGutterUndoHunk)
 nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 
-" buffers
+" opened files
 nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <Leader><Tab> <C-^>
+nnoremap <silent> <Leader>e :History<CR>
 
 " searching
-nnoremap          <LocalLeader>/ /
 nnoremap <silent> <Leader>/ :Ag<CR>
 

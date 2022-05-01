@@ -32,7 +32,7 @@
         ~/.gitconfig-system-specific: git/gitconfig-system-specific
 
         # vim
-        ~/.ideavimrc: vim/ideavimrc
+        ~/.ideavimrc: ideavim/init.vim
         ~/.config/nvim: vim
 
         # karabiner
