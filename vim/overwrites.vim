@@ -19,6 +19,17 @@ nunmap <CR>
 " quick save-all-and-quit shortcut
 nnoremap <silent> <Leader>Q :wqa<CR>
 
-" TODO: detect os dark mode
-set background=light
+" set background color according to darkmode
+let darkmodePath = expand("~/.darkmode")
+let darkmode = []
+if filereadable(darkmodePath)
+    let darkmode = readfile(darkmodePath)
+endif
+
+if len(darkmode) > 0 && darkmode[0] == "1"
+    set background=dark
+else
+    set background=light
+endif
+
 
