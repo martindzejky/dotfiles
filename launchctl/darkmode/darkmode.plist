@@ -12,7 +12,13 @@
         <key>ProgramArguments</key>
         <array>
             <string>/Users/martindzejky/.dotfiles/launchctl/darkmode/darkmode</string>
+            <string>sh</string>
             <string>/Users/martindzejky/.dotfiles/launchctl/darkmode/darkmode-changed.fish</string>
         </array>
+
+        <key>StandardOutPath</key>
+        <string>/tmp/darkmode/out.log</string>
+        <key>StandardErrorPath</key>
+        <string>/tmp/darkmode/error.log</string>
     </dict>
 </plist>

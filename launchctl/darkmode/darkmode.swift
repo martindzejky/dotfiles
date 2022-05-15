@@ -10,6 +10,10 @@ func shell(_ args: [String]) -> Int32 {
     let isDark = UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
     var env = ProcessInfo.processInfo.environment
     env["DARKMODE"] = isDark ? "1" : "0"
+
+    print("Running the script")
+    print("DARKMODE:", isDark, separator: " ")
+
     task.environment = env
     task.launchPath = "/usr/bin/env"
     task.arguments = args
@@ -17,6 +21,7 @@ func shell(_ args: [String]) -> Int32 {
     task.standardOutput = FileHandle.standardOutput
     task.launch()
     task.waitUntilExit()
+
     return task.terminationStatus
 }
 
