@@ -35,6 +35,9 @@
         ~/.ideavimrc: ideavim/init.vim
         ~/.config/nvim: vim
 
+        # ranger
+        ~/.config/ranger: ranger
+
         # karabiner
         ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
 
