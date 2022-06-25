@@ -18,11 +18,11 @@ module.exports = {
     copyOnSelect: false,
     defaultSSHApp: true,
 
-    // colors based on OS
-    hyperPrefersColorScheme: {
-        light: 'hyper-solarized-light',
-        dark: 'hyper-solarized-dark',
-    },
+    // colors based on OS // disabled because of Vim
+    // hyperPrefersColorScheme: {
+    //     light: 'hyper-solarized-light',
+    //     dark: 'hyper-solarized-dark',
+    // },
 
     // hyper-pane configuration
     paneNavigation: {
@@ -43,9 +43,9 @@ module.exports = {
     "hypercwd",
     "hyper-pane",
     "hyperminimal",
-    "hyper-solarized-light",
     "hyper-solarized-dark",
-    "hyper-prefers-color-scheme"
+    // "hyper-solarized-light",
+    // "hyper-prefers-color-scheme" // disabled because of Vim
   ],
 
   keymaps: {

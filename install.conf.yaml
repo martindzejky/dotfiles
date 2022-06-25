@@ -27,9 +27,6 @@
         ~/.hyper.js: hyper/hyper.js
         ~/.ssh/config: ssh/config
 
-        # launchctl
-        ~/Library/LaunchAgents/darkmode.plist: launchctl/darkmode/darkmode.plist
-
         # git
         ~/.gitconfig: git/gitconfig
         ~/.gitconfig-system-specific: git/gitconfig-system-specific

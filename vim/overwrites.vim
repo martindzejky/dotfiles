@@ -19,17 +19,7 @@ nunmap <CR>
 " quick save-all-and-quit shortcut
 nnoremap <silent> <Leader>Q :wqa<CR>
 
-" set background color according to darkmode
-let darkmodePath = expand("~/.darkmode")
-let darkmode = []
-if filereadable(darkmodePath)
-    let darkmode = readfile(darkmodePath)
-endif
-
-if len(darkmode) > 0 && darkmode[0] == "1"
-    set background=dark
-else
-    set background=light
-endif
+" set background color always to dark
+set background=dark
 
 
