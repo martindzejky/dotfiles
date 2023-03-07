@@ -24,7 +24,6 @@
         ~/.config/fish/functions: fish/functions
         ~/.config/fish/fishfile: fish/fishfile
         ~/.config/starship.toml: fish/starship.toml
-        ~/.hyper.js: hyper/hyper.js
         ~/.ssh/config: ssh/config
 
         # git
