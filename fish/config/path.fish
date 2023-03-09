@@ -33,10 +33,3 @@ end
 
 # set fzf to use the fd command by default
 set -gx FZF_DEFAULT_COMMAND "fd --type f"
-
-# go
-if test -d ~/projects/go/bin
-    set -gx GOPATH ~/projects/go
-    set -gx PATH ~/projects/go/bin $PATH
-end
-
