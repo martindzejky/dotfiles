@@ -19,7 +19,6 @@ brew "pinentry-mac"
 brew "ranger"
 brew "starship"
 brew "the_silver_searcher"
-brew "yarn"
 brew "zoxide"
 
 cask "beardedspice"
@@ -27,7 +26,7 @@ cask "discord"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "google-cloud-sdk"
-cask "iterm2"
+cask "warp"
 cask "karabiner-elements"
 
 mas "1Password", id: 1333542190
