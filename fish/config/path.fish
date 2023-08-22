@@ -9,8 +9,15 @@ set -gx NODE_OPTIONS "--max_old_space_size=4096"
 # android
 if test -e /usr/libexec/java_home
     set -gx JAVA_HOME (/usr/libexec/java_home)
-    set -gx ANDROID_HOME /usr/local/share/android-sdk
-    set -gx ANDROID_SDK_ROOT /usr/local/share/android-sdk
+end
+
+if test -e $HOMEBREW_PREFIX/share/android-commandlinetools
+    set ANDROID_HOME $HOMEBREW_PREFIX/share/android-commandlinetools
+    set ANDROID_SDK_ROUTE $ANDROID_HOME
+end
+
+if test -d $ANDROID_HOME/cmdline-tools/latest/bin
+    set -gx PATH $PATH "$ANDROID_HOME/cmdline-tools/latest/bin"
 end
 
 if test -d $ANDROID_HOME/platform-tools
