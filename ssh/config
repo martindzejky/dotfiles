@@ -4,5 +4,5 @@ User martindzejky
 ForwardAgent yes
 StrictHostKeyChecking no
 AddKeysToAgent yes
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/id_ed25519
 
