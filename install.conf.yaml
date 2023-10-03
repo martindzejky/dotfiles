@@ -30,6 +30,10 @@
         ~/.gitconfig: git/gitconfig
         ~/.gitconfig-system-specific: git/gitconfig-system-specific
 
+        # gpg
+        ~/.gnupg/gpg.conf: gpg/gpg.conf
+        ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
+
         # vim
         ~/.ideavimrc: ideavim/init.vim
         ~/.config/nvim: vim
