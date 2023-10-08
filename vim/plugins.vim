@@ -77,15 +77,6 @@ Plug 'junegunn/fzf.vim'
 " use ag for the ack.vim plugin
 let g:ackprg = 'ag --vimgrep'
 
-" AUTOCOMPLETE
-" coc provides the base for autocomplete extensions.
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Godot engine-related plugins to make Vim work with it.
-Plug 'habamax/vim-godot'
-
-let g:godot_executable = '/Applications/Godot.app'
-
 " DEVICONS
 " Adds cool filetype icons. Must be the last plugin.
 Plug 'ryanoasis/vim-devicons'
