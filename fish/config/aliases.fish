@@ -18,4 +18,5 @@ alias g git
 alias k kubectl
 alias r ranger
 alias v nvim
+alias y yarn
 
