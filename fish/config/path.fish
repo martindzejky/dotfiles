@@ -40,3 +40,9 @@ end
 
 # set fzf to use the fd command by default
 set -gx FZF_DEFAULT_COMMAND "fd --type f"
+
+# visual studio code
+if test -d '/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
+    set -gx PATH $PATH '/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
+end
+
