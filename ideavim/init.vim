@@ -14,7 +14,7 @@ let mapleader=" "
 set easymotion
 set surround
 set highlightedyank
-set sneak
+"set sneak
 set multiple-cursors
 set nerdtree
 set commentary
