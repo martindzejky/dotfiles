@@ -19,7 +19,7 @@ nunmap <CR>
 " quick save-all-and-quit shortcut
 nnoremap <silent> <Leader>Q :wqa<CR>
 
-" set background color always to dark
-set background=dark
+" try to inherit colors from the terminal
+hi Normal guibg=NONE ctermbg=NONE
 
 
