@@ -6,6 +6,11 @@ set -gx N_PREFIX ~/.n
 set -gx PATH $N_PREFIX/bin $PATH
 set -gx NODE_OPTIONS "--max_old_space_size=4096"
 
+# yarn
+if which yarn > /dev/null
+    set -gx PATH $PATH (yarn global bin)
+end
+
 # android
 if test -e /usr/libexec/java_home
     set -gx JAVA_HOME (/usr/libexec/java_home)
