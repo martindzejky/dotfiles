@@ -11,6 +11,11 @@ if which yarn > /dev/null
     set -gx PATH $PATH (yarn global bin)
 end
 
+# bun
+if test -d ~/.bun
+    set -gx PATH $PATH ~/.bun/bin
+end
+
 # android
 if test -e /usr/libexec/java_home
     set -gx JAVA_HOME (/usr/libexec/java_home)
