@@ -22,4 +22,13 @@ nnoremap <silent> <Leader>Q :wqa<CR>
 " try to inherit colors from the terminal
 hi Normal guibg=NONE ctermbg=NONE
 
+" set the background color based on OS theme, which is unnecessarily
+" difficult still...
+" see: https://www.alecjacobson.com/weblog/4885.html
+let s:sys = system("defaults read -g AppleInterfaceStyle 2&>/dev/null")
+if v:shell_error
+    set background=light
+else
+    set background=dark
+endif
 
