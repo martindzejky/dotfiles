@@ -16,6 +16,7 @@ alias lla "ls -AlF"
 alias d docker
 alias g git
 alias k kubectl
+alias pn pnpm
 alias r ranger
 alias v nvim
 alias y yarn
