@@ -56,3 +56,8 @@ if test -d '/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
     set -gx PATH $PATH '/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
 end
 
+# itch.io's butler
+if test -d "$HOME/Library/Application Support/itch/apps/butler"
+    set -gx PATH $PATH "$HOME/Library/Application Support/itch/apps/butler"
+end
+
