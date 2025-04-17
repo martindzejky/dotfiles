@@ -1,34 +1,41 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-
 brew "bat"
+brew "cmake"
 brew "fd"
+brew "ffmpeg"
 brew "fish"
 brew "fzf"
 brew "git"
 brew "git-delta"
 brew "git-lfs"
+brew "git-who"
 brew "gnupg"
 brew "mas"
 brew "n"
 brew "neovim"
 brew "pinentry-mac"
+brew "qpdf"
 brew "ranger"
 brew "starship"
 brew "the_silver_searcher"
 brew "zoxide"
 
-cask "beardedspice"
+cask "cursor"
 cask "discord"
+cask "docker"
+cask "figma"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
-cask "google-cloud-sdk"
-cask "warp"
+cask "godot"
+cask "google-chrome"
+cask "itch"
 cask "karabiner-elements"
+cask "losslesscut"
+cask "notion"
+cask "warp"
+cask "whatsapp"
+cask "zoom"
 
-mas "1Password", id: 1333542190
-mas "BetterSnapTool", id: 417375580
+mas "Brightness Slider", id: 456624497
+mas "Slack", id: 803453959
+mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637

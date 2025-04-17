@@ -17,6 +17,10 @@
 [core]
     editor = nvim
     ignorecase = false
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
 
 [init]
     defaultBranch = master
@@ -32,10 +36,14 @@
     show = delta
 
 [delta]
+    navigate = true
     features = side-by-side line-numbers decorations
 
 [pull]
     ff = only
+
+[merge]
+    conflictstyle = zdiff3
 
 [filter "lfs"]
     process = git-lfs filter-process
