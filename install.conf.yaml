@@ -58,9 +58,3 @@
     - command: scripts/install/fish.sh
       description: Install fish shell
       stdout: true
-
-# install and initialize fisher
-- shell:
-    - command: scripts/install/fisher.fish
-      description: Install fisher
-      stdout: true
