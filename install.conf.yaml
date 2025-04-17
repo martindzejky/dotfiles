@@ -1,14 +1,14 @@
 # default settings for linking
 - defaults:
-  link:
-    create: true
-    force: true
-    relink: true
+    link:
+      create: true
+      force: true
+      relink: true
 
 # start by cleaning existing configurations
 - clean:
-    - "~"
-    - "~/.config"
+    - '~'
+    - '~/.config'
 
 # update git submodules
 - shell:
@@ -16,32 +16,31 @@
 
 # link configuration files
 - link:
-  # term
-  ~/.hushlogin: login/.hushlogin
+    # terminal
+    ~/.hushlogin: login/.hushlogin
 
-  # fish shell
-  ~/.config/fish/conf.d: fish/config
-  ~/.config/fish/functions: fish/functions
-  ~/.config/fish/fishfile: fish/fishfile
-  ~/.config/starship.toml: fish/starship.toml
+    # fish shell
+    ~/.config/fish/conf.d: fish/config
+    ~/.config/fish/functions: fish/functions
+    ~/.config/starship.toml: fish/starship.toml
 
-  # ssh
-  ~/.ssh/config: ssh/config
+    # ssh
+    ~/.ssh/config: ssh/config
 
-  # git
-  ~/.gitconfig: git/gitconfig
-  ~/.gitconfig-system-specific: git/gitconfig-system-specific
+    # git
+    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig-system-specific: git/gitconfig-system-specific
 
-  # gpg
-  ~/.gnupg/gpg.conf: gpg/gpg.conf
-  ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
+    # gpg
+    ~/.gnupg/gpg.conf: gpg/gpg.conf
+    ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
 
-  # vim
-  ~/.ideavimrc: ideavim/init.vim
-  ~/.config/nvim: vim
+    # vim
+    ~/.ideavimrc: ideavim/init.vim
+    ~/.config/nvim: vim
 
-  # ranger
-  ~/.config/ranger: ranger
+    # ranger
+    ~/.config/ranger: ranger
 
 # set up the home directory structure
 - create:
@@ -57,4 +56,10 @@
 - shell:
     - command: scripts/install/fish.sh
       description: Install fish shell
+      stdout: true
+
+# next steps hint
+- shell:
+    - command: echo "Now `cd brew` and run `brew bundle`"
+      description: Next steps
       stdout: true
