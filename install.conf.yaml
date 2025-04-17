@@ -41,9 +41,6 @@
         # ranger
         ~/.config/ranger: ranger
 
-        # karabiner
-        ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
-
 # set up the home directory structure
 -   create:
         - ~/projects
