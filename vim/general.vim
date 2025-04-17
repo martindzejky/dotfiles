@@ -40,5 +40,4 @@ set diffopt=filler,iwhite,iwhiteeol,vertical,internal
 
 " indentation
 set expandtab
-set shiftwidth=4
-
+set shiftwidth=2

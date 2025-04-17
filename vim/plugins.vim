@@ -83,4 +83,3 @@ Plug 'ryanoasis/vim-devicons'
 
 " end the list of plugins
 call plug#end()
-

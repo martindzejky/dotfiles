@@ -15,31 +15,29 @@ nnoremap <silent> <Leader><Leader> :Commands<CR>
 nnoremap <silent> <Leader>? :Helptags<CR>
 
 " window-handling keybindings
-nnoremap <silent> <Leader>wc <C-w>c
-nnoremap <silent> <Leader>wo <C-w>o
-nnoremap <silent> <Leader>ws <C-w>s
-nnoremap <silent> <Leader>wv <C-w>v
-nnoremap <silent> <Leader>ww <C-w>w
+nnoremap <silent> <Leader>wc <C-w>c " close window
+nnoremap <silent> <Leader>wo <C-w>o " only this window
+nnoremap <silent> <Leader>ws <C-w>s " split window below
+nnoremap <silent> <Leader>wv <C-w>v " split window right
+nnoremap <silent> <Leader>ww <C-w>w " switch window
 
 " file-specific keybindings
-nnoremap <silent> <Leader>ff :Files<CR>
-nnoremap <silent> <Leader>fs :wall<CR>
-nnoremap <silent> <Leader>fg :GFiles?<CR>
+nnoremap <silent> <Leader>ff :Files<CR>   " fuzzy find files
+nnoremap <silent> <Leader>fg :GFiles?<CR> " fuzzy find git files
+nnoremap <silent> <Leader>fs :wall<CR>    " save all
 
 " project-specific keybindings
-nnoremap <silent> <Leader>pt :NERDTree<CR>
-nnoremap <silent> <Leader>pf :NERDTreeFind<CR>
+nnoremap <silent> <Leader>pt :NERDTree<CR>     " open file tree
+nnoremap <silent> <Leader>pf :NERDTreeFind<CR> " open current file in file tree
 
-" dotfile specific
-nnoremap <silent> <Leader>fde :edit $MYVIMRC<CR>
-nnoremap <silent> <Leader>fdr :source $MYVIMRC<CR>
+" plugins
 nnoremap <silent> <Leader>fdi :PlugInstall<CR>
 nnoremap <silent> <Leader>fdu :PlugUpdate<CR>
 
 " jumping around the file using vim-easymotion plugin
-nmap ;; <Plug>(easymotion-bd-fn)
-nmap ;l <Plug>(easymotion-bd-jk)
-nmap ;n <Plug>(easymotion-bd-n)
+nmap ;; <Plug>(easymotion-bd-fn) " jump to word
+nmap ;l <Plug>(easymotion-bd-jk) " jump to line
+nmap ;n <Plug>(easymotion-bd-n)  " jump to search result (n/N)
 
 " commenting
 nnoremap <silent> <LocalLeader>c :call NERDComment('n', 'toggle')<CR>
@@ -50,10 +48,10 @@ nnoremap <silent> <Leader>gaa :Git add --all<CR>
 nnoremap <silent> <Leader>gbr :Git branch<CR>
 nnoremap <silent> <Leader>gbl :Git blame<CR>
 nnoremap <silent> <Leader>gco :Git commit<CR>
-nnoremap <silent> <Leader>gd :Gdiffsplit<CR>
-nnoremap <silent> <Leader>gl :Commits!<CR>
-nnoremap <silent> <Leader>gs :Git<CR>
-nnoremap <silent> <Leader>gg :Git<CR>
+nnoremap <silent> <Leader>gd  :Gdiffsplit<CR>
+nnoremap <silent> <Leader>gl  :Commits!<CR>
+nnoremap <silent> <Leader>gs  :Git<CR>
+nnoremap <silent> <Leader>gg  :Git<CR>
 
 nnoremap <silent> <Leader>ghp <Plug>(GitGutterPreviewHunk)
 nnoremap <silent> <Leader>ghs <Plug>(GitGutterStageHunk)
@@ -62,9 +60,7 @@ nnoremap <silent> <Leader>ghf :GitGutterFold<CR>
 
 " opened files
 nnoremap <silent> <Leader>b :Buffers<CR>
-nnoremap <silent> <Leader><Tab> <C-^>
 nnoremap <silent> <Leader>e :History<CR>
 
 " searching
 nnoremap <silent> <Leader>/ :Ag<CR>
-

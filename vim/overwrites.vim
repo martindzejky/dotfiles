@@ -23,7 +23,7 @@ nnoremap <silent> <Leader>Q :wqa<CR>
 hi Normal guibg=NONE ctermbg=NONE
 
 " set the background color based on OS theme, which is unnecessarily
-" difficult still...
+" difficult still... but at least it works now!
 " see: https://www.alecjacobson.com/weblog/4885.html
 let s:sys = system("defaults read -g AppleInterfaceStyle 2&>/dev/null")
 if v:shell_error
@@ -31,4 +31,3 @@ if v:shell_error
 else
     set background=dark
 endif
-
