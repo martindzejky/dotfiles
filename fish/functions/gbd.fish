@@ -30,4 +30,3 @@ function gbd \
     end
   end
 end
-

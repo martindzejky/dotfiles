@@ -69,4 +69,3 @@ alias gswc    "git switch --create"
 alias gswd    "git switch --detach"
 alias gt      "git tag"
 alias gts     "git tag --sign"
-

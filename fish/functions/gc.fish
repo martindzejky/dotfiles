@@ -20,4 +20,3 @@ function gc \
     echo "no configuration found"
   end
 end
-

@@ -35,4 +35,3 @@ function kube-contexts \
 
   echo $selected
 end
-

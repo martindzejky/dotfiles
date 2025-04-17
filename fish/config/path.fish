@@ -49,4 +49,3 @@ set -gx FZF_DEFAULT_COMMAND "fd --type f"
 if test -d "$HOME/Library/Application Support/itch/apps/butler"
   fish_add_path --path "$HOME/Library/Application Support/itch/apps/butler"
 end
-

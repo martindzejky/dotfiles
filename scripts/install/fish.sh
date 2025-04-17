@@ -20,4 +20,3 @@ else
   echo "setting as default shell"
   chsh -s $(which fish)
 fi
-

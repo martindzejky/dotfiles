@@ -43,4 +43,3 @@ function gsw \
 
   git switch $selected
 end
-

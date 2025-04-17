@@ -30,4 +30,3 @@ function gl \
     end
   end
 end
-

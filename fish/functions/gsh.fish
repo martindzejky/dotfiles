@@ -4,4 +4,3 @@ function gsh \
 
   git show --color --name-only $argv
 end
-

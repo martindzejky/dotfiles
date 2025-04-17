@@ -17,4 +17,3 @@ cd ~/.dotfiles
 
 Make sure to install and use a [Powerline-patched font](https://github.com/powerline/fonts) or
 any font with powerline symbols for the [agnoster theme](https://github.com/oh-my-fish/theme-agnoster) to work.
-

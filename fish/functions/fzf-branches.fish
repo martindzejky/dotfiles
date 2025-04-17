@@ -58,4 +58,3 @@ function fzf-branches \
     echo $s | cut -d " " -f 1
   end
 end
-

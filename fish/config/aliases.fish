@@ -20,4 +20,3 @@ alias pn pnpm
 alias r ranger
 alias v nvim
 alias y yarn
-
