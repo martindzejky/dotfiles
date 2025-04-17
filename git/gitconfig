@@ -1,55 +1,55 @@
 [user]
-    name = Martin Jakubik
-    email = martindzejky@gmail.com
+  name = Martin Jakubik
+  email = martindzejky@gmail.com
 
 [commit]
-    gpgsign = true
+  gpgsign = true
 
 [gpg]
-    program = gpg
+  program = gpg
 
 [push]
-    default = current
+  default = current
 
 [rebase]
-    autosquash = true
+  autosquash = true
 
 [core]
-    editor = nvim
-    ignorecase = false
-    pager = delta
+  editor = nvim
+  ignorecase = false
+  pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 
 [init]
-    defaultBranch = master
+  defaultBranch = master
 
 [color]
-    diff = auto
-    ui = auto
+  diff = auto
+  ui = auto
 
 [pager]
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
 
 [delta]
-    navigate = true
-    features = side-by-side line-numbers decorations
+  navigate = true
+  features = side-by-side line-numbers decorations
 
 [pull]
-    ff = only
+  ff = only
 
 [merge]
-    conflictstyle = zdiff3
+  conflictstyle = zdiff3
 
 [filter "lfs"]
-    process = git-lfs filter-process
-    required = true
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
 
 [include]
-    path = ~/.gitconfig-system-specific
+  path = ~/.gitconfig-system-specific
