@@ -3,6 +3,8 @@
 
 # IDEs and editors
 .idea
+.vscode
+.cursor
 
 # brew lockfile
 brew/Brewfile.lock.json

@@ -1,64 +1,66 @@
 # default settings for linking
--   defaults:
-        link:
-            create: true
-            force: true
-            relink: true
+- defaults:
+  link:
+    create: true
+    force: true
+    relink: true
 
 # start by cleaning existing configurations
--   clean:
-        - '~'
-        - '~/.config'
+- clean:
+    - "~"
+    - "~/.config"
 
 # update git submodules
--   shell:
-        - [git submodule update --init --recursive, Installing submodules]
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
 
 # link configuration files
--   link:
-        # term
-        ~/.hushlogin: login/.hushlogin
+- link:
+  # term
+  ~/.hushlogin: login/.hushlogin
 
-        # shell
-        ~/.config/fish/conf.d: fish/config
-        ~/.config/fish/functions: fish/functions
-        ~/.config/fish/fishfile: fish/fishfile
-        ~/.config/starship.toml: fish/starship.toml
-        ~/.ssh/config: ssh/config
+  # fish shell
+  ~/.config/fish/conf.d: fish/config
+  ~/.config/fish/functions: fish/functions
+  ~/.config/fish/fishfile: fish/fishfile
+  ~/.config/starship.toml: fish/starship.toml
 
-        # git
-        ~/.gitconfig: git/gitconfig
-        ~/.gitconfig-system-specific: git/gitconfig-system-specific
+  # ssh
+  ~/.ssh/config: ssh/config
 
-        # gpg
-        ~/.gnupg/gpg.conf: gpg/gpg.conf
-        ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
+  # git
+  ~/.gitconfig: git/gitconfig
+  ~/.gitconfig-system-specific: git/gitconfig-system-specific
 
-        # vim
-        ~/.ideavimrc: ideavim/init.vim
-        ~/.config/nvim: vim
+  # gpg
+  ~/.gnupg/gpg.conf: gpg/gpg.conf
+  ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
 
-        # ranger
-        ~/.config/ranger: ranger
+  # vim
+  ~/.ideavimrc: ideavim/init.vim
+  ~/.config/nvim: vim
+
+  # ranger
+  ~/.config/ranger: ranger
 
 # set up the home directory structure
--   create:
-        - ~/projects
+- create:
+    - ~/Projects
 
 # install brew (automatic install does not work)
--   shell:
-        - command: scripts/install/brew.sh
-          description: Install brew
-          stdout: true
+- shell:
+    - command: scripts/install/brew.sh
+      description: Install brew
+      stdout: true
 
 # install fish shell
--   shell:
-        - command: scripts/install/fish.sh
-          description: Install fish shell
-          stdout: true
+- shell:
+    - command: scripts/install/fish.sh
+      description: Install fish shell
+      stdout: true
 
 # install and initialize fisher
--   shell:
-        - command: scripts/install/fisher.fish
-          description: Install fisher
-          stdout: true
+- shell:
+    - command: scripts/install/fisher.fish
+      description: Install fisher
+      stdout: true
