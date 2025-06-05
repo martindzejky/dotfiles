@@ -44,9 +44,5 @@ Plug 'wellle/targets.vim'
 " Allows to easily jump around the file.
 Plug 'ggandor/leap.nvim'
 
-" LEAP
-" Allows to easily jump around the file.
-Plug 'ggandor/leap.nvim'
-
 " end the list of plugins
 call plug#end()
