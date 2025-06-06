@@ -24,7 +24,3 @@ nmap <silent> <Leader>wo <C-w>o " only this window
 nmap <silent> <Leader>ws <C-w>s " split window below
 nmap <silent> <Leader>wv <C-w>v " split window right
 nmap <silent> <Leader>ww <C-w>w " switch window
-
-" commands
-nmap <silent> <Leader><Leader> <Cmd>call v:lua.require('vscode').call('workbench.action.showCommands')<CR>
-nmap <silent> <Leader>f <Cmd>call v:lua.require('vscode').call('workbench.action.quickOpen')<CR>
