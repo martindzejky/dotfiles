@@ -7,9 +7,8 @@
 " break line only on certain characters
 set linebreak
 
-" enable line numbers and use relative numbering - really helpful in vim!
+" enable line numbers
 set number
-set relativenumber
 
 " decrease update time to have git markings appear faster
 set updatetime=100
