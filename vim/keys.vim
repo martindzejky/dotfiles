@@ -36,7 +36,7 @@ if exists('g:vscode')
   nmap <silent> <Leader>wo <Cmd>call v:lua.require('vscode').call('workbench.action.closeEditorsInOtherGroups')<CR>
   nmap <silent> <Leader>ws <Cmd>call v:lua.require('vscode').call('workbench.action.splitEditorDown')<CR>
   nmap <silent> <Leader>wv <Cmd>call v:lua.require('vscode').call('workbench.action.splitEditorRight')<CR>
-  nmap <silent> <Leader>ww <Cmd>call v:lua.require('vscode').call('workbench.action.focusNextPart')<CR>
+  nmap <silent> <Leader>ww <Cmd>call v:lua.require('vscode').call('workbench.action.focusNextGroup')<CR>
 
   " window navigation
   nmap <silent> <C-h> <Cmd>call v:lua.require('vscode').call('workbench.action.focusLeftGroup')<CR>
