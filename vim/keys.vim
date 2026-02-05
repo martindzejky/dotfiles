@@ -18,6 +18,9 @@ nnoremap U <C-r>
 map s <Plug>(leap)
 nmap S <Plug>(leap-from-window)
 
+" clear search highlight
+nnoremap <Leader><Leader> :nohlsearch<CR>
+
 
 if exists('g:vscode')
   " cursor / vs code specific keybindings
