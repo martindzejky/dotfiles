@@ -37,6 +37,7 @@ if exists('g:vscode')
   nmap <silent> <Leader>ws <Cmd>call v:lua.require('vscode').call('workbench.action.splitEditorDown')<CR>
   nmap <silent> <Leader>wv <Cmd>call v:lua.require('vscode').call('workbench.action.splitEditorRight')<CR>
   nmap <silent> <Leader>ww <Cmd>call v:lua.require('vscode').call('workbench.action.focusNextGroup')<CR>
+  nmap <silent> <Leader>wW <Cmd>call v:lua.require('vscode').call('workbench.action.focusPreviousGroup')<CR>
 
   " window navigation
   nmap <silent> <C-h> <Cmd>call v:lua.require('vscode').call('workbench.action.focusLeftGroup')<CR>
@@ -52,6 +53,7 @@ else
   nmap <silent> <Leader>ws <C-w>s " split window below
   nmap <silent> <Leader>wv <C-w>v " split window right
   nmap <silent> <Leader>ww <C-w>w " switch window
+  nmap <silent> <Leader>wW <C-w>W " switch window backward
 
   " window navigation
   nmap <silent> <C-h> <C-w>h
