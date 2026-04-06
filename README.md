@@ -13,7 +13,8 @@ cd ~/.dotfiles
 ./install
 ```
 
-### Manual steps
+## Manual steps
 
-Make sure to install and use a [Powerline-patched font](https://github.com/powerline/fonts) or
-any font with powerline symbols for the [agnoster theme](https://github.com/oh-my-fish/theme-agnoster) to work.
+I'm using [starship](https://starship.rs) for my terminal prompts. For this to work correctly, install and set up a [Nerd font](https://www.nerdfonts.com).
+
+My current `Brewfile` already installs my favourite font as patched `font-jetbrains-mono-nerd-font`, so just set it up in the editors and terminal apps.
