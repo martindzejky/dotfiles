@@ -14,6 +14,10 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
+# load third-party Dotbot plugins after submodules are available
+- plugins:
+    - dotbot-brew
+
 # link configuration files
 - link:
     # terminal
@@ -54,14 +58,12 @@
       description: Install brew
       stdout: true
 
+# install brew packages from the checked-in Brewfile
+- brewfile:
+    - brew/Brewfile
+
 # install fish shell
 - shell:
     - command: scripts/install/fish.sh
       description: Install fish shell
-      stdout: true
-
-# next steps hint
-- shell:
-    - command: echo "Now `cd brew` and run `brew bundle`"
-      description: Next steps
       stdout: true
