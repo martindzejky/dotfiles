@@ -14,7 +14,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
-# load third-party Dotbot plugins after submodules are available
+# load third-party dotbot plugins after submodules are available
 - plugins:
     - dotbot-brew
 
