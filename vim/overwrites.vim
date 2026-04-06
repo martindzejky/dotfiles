@@ -6,7 +6,8 @@
 runtime! plugin/default.vim
 
 " use solarized colors <3
-colorscheme NeoSolarized
+" keep bootstrap and first-time PlugInstall working before the plugin exists
+silent! colorscheme NeoSolarized
 
 " do not put everything into clipboard please
 " I cannot get used to it!

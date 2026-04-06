@@ -59,6 +59,18 @@
 - brewfile:
     - brew/Brewfile
 
+# install vim-plug itself
+- shell:
+    - command: scripts/install/vim-plug.sh
+      description: Install vim-plug
+      stdout: true
+
+# install vim plugins for terminal nvim and Cursor Neovim
+- shell:
+    - command: nvim --headless "+PlugInstall --sync" +qa
+      description: Install vim plugins
+      stdout: true
+
 # install fish shell
 - shell:
     - command: scripts/install/fish.sh
