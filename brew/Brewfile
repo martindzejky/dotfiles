@@ -1,15 +1,20 @@
 brew "bat"
 brew "cmake"
+brew "exiftool"
 brew "fd"
 brew "ffmpeg"
 brew "fish"
 brew "fzf"
+brew "gh"
 brew "git"
 brew "git-delta"
 brew "git-lfs"
 brew "git-who"
+brew "glab"
 brew "gnupg"
+brew "imagemagick"
 brew "mas"
+brew "mkcert"
 brew "n"
 brew "neovim"
 brew "pinentry-mac"
@@ -36,6 +41,8 @@ cask "whatsapp"
 cask "zoom"
 
 mas "Brightness Slider", id: 456624497
+mas "OptiCull", id: 6448657895
 mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
+mas "WeTransfer", id: 1114922065
