@@ -117,6 +117,9 @@
   "workbench.layoutControl.enabled": false,
   "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.view.showQuietly": {
+    "workbench.panel.output": true
+  },
   "zenMode.fullScreen": false,
   "zenMode.hideActivityBar": false,
   "zenMode.showTabs": "none"
