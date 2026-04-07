@@ -49,6 +49,7 @@
     ~/.cursor/skills: ai/skills
     ~/.cursor/commands: ai/commands
     ~/.cursor/agents: ai/agents
+    ~/.cursor/rules: ai/rules
 
     # ranger
     ~/.config/ranger: ranger
