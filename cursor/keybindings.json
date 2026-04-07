@@ -1,0 +1,149 @@
+[
+  {
+    "command": "-editor.action.outdentLines",
+    "key": "cmd+[",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-composer.previousChatTab",
+    "key": "cmd+[",
+    "when": "composerFocused"
+  },
+  {
+    "command": "-composer.nextChatTab",
+    "key": "cmd+]",
+    "when": "composerFocused"
+  },
+  {
+    "command": "-editor.action.indentLines",
+    "key": "cmd+]",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "workbench.action.navigateBack",
+    "key": "cmd+[",
+    "when": "canNavigateBack"
+  },
+  {
+    "command": "-workbench.action.navigateBack",
+    "key": "ctrl+-",
+    "when": "canNavigateBack"
+  },
+  {
+    "command": "workbench.action.navigateForward",
+    "key": "cmd+]",
+    "when": "canNavigateForward"
+  },
+  {
+    "command": "-workbench.action.navigateForward",
+    "key": "ctrl+shift+-",
+    "when": "canNavigateForward"
+  },
+  {
+    "command": "composerMode.agent",
+    "key": "cmd+i"
+  },
+  {
+    "command": "workbench.action.quickOpen",
+    "key": "cmd+p"
+  },
+  {
+    "command": "-workbench.action.quickOpen",
+    "key": "cmd+p"
+  },
+  {
+    "command": "workbench.action.showCommands",
+    "key": "shift+cmd+p"
+  },
+  {
+    "command": "-workbench.action.showCommands",
+    "key": "shift+cmd+p"
+  },
+  {
+    "command": "-editor.action.simpleInlineDiffs.acceptAll",
+    "key": "cmd+g",
+    "when": "editorTextFocus && hasDisplayedSimpleDiff"
+  },
+  {
+    "command": "-editor.action.nextMatchFindAction",
+    "key": "cmd+g",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.findNext",
+    "key": "cmd+g",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.goToRecentDirectory",
+    "key": "cmd+g",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-editor.action.previousMatchFindAction",
+    "key": "shift+cmd+g",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.findPrevious",
+    "key": "shift+cmd+g",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.openDetectedLink",
+    "key": "shift+cmd+g",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "shift+cmd+g",
+    "when": "workbench.scm.active"
+  },
+  {
+    "command": "-workbench.view.scm",
+    "key": "ctrl+shift+g",
+    "when": "workbench.scm.active"
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "shift+cmd+g",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "command": "-workbench.view.scm",
+    "key": "ctrl+shift+g",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "command": "-cursor.composer.openAgentWindow",
+    "key": "cmd+e",
+    "when": "cursor.appLayoutEnabled && cursor.appLayout != 'agent'"
+  },
+  {
+    "command": "-cursor.composer.openEditorWindow",
+    "key": "cmd+e",
+    "when": "cursor.appLayoutEnabled && cursor.appLayout == 'agent'"
+  },
+  {
+    "command": "composerMode.plan",
+    "key": "shift+cmd+i"
+  },
+  {
+    "command": "composerMode.chat",
+    "key": "cmd+l"
+  },
+  {
+    "command": "composerMode.debug",
+    "key": "shift+cmd+l"
+  },
+  {
+    "command": "composer.createNewWithPrevContext",
+    "key": "cmd+n",
+    "when": "agentsPaneFocused && !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus || composerFocused && !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus || !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus && activeEditor == 'workbench.editor.composer' || !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus && focusedView =~ /^workbench.panel.aichat.view/"
+  },
+  {
+    "command": "-composer.createNewComposerTab",
+    "key": "cmd+n",
+    "when": "agentsPaneFocused && !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus || composerFocused && !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus || !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus && activeEditor == 'workbench.editor.composer' || !editorTextFocus && !explorerViewletFocus && !filesExplorerFocus && focusedView =~ /^workbench.panel.aichat.view/"
+  }
+]

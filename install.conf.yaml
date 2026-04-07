@@ -42,6 +42,10 @@
     # vim
     ~/.config/nvim: vim
 
+    # cursor
+    '~/Library/Application Support/Cursor/User/settings.json': cursor/settings.json
+    '~/Library/Application Support/Cursor/User/keybindings.json': cursor/keybindings.json
+
     # ranger
     ~/.config/ranger: ranger
 
