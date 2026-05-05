@@ -1,9 +1,9 @@
 {
   "[gdscript]": {
-    "editor.defaultFormatter": "DoHe.godot-format"
+    "editor.defaultFormatter": "DoHe.godot-format",
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
   "atlascode.bitbucket.enabled": false,
   "chat.editor.fontSize": 14,
@@ -18,7 +18,7 @@
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
-    "source.formatDocument": "always"
+    "source.formatDocument": "always",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.foldingImportsByDefault": true,
@@ -31,7 +31,7 @@
   "editor.showFoldingControls": "always",
   "explorer.confirmDragAndDrop": false,
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "asvetliakov.vscode-neovim": 1,
   },
   "files.autoSave": "onFocusChange",
   "git-graph.repository.fetchAndPruneTags": true,
@@ -63,17 +63,17 @@
   "gitlens.remotes": [
     {
       "domain": "github.com",
-      "type": "GitHub"
+      "type": "GitHub",
     },
     {
       "domain": "gitlab.com",
-      "type": "GitLab"
+      "type": "GitLab",
     },
     {
       "domain": "git.efabrica.sk",
       "name": "eFabrica",
-      "type": "GitLab"
-    }
+      "type": "GitLab",
+    },
   ],
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.views.commitDetails.files.layout": "list",
@@ -91,7 +91,7 @@
   "scm.inputFontSize": 16,
   "search.exclude": {
     "**/.next": true,
-    "**/.nuxt": true
+    "**/.nuxt": true,
   },
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.defaultProfile.osx": "fish",
@@ -118,9 +118,10 @@
   "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.view.showQuietly": {
-    "workbench.panel.output": true
+    "workbench.panel.output": true,
   },
   "zenMode.fullScreen": false,
   "zenMode.hideActivityBar": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
+  "workbench.agentsWindowButton.enabled": false,
 }
