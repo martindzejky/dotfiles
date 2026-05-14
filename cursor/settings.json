@@ -10,7 +10,6 @@
   "cursor.chat.terminalShowHoverHint": false,
   "cursor.composer.backspaceRemoveContext": false,
   "cursor.composer.collapsePaneInputBoxPills": true,
-  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
   "cursor.composer.usageSummaryDisplay": "always",
   "debug.console.fontSize": 14,
   "diffEditor.hideUnchangedRegions.enabled": true,
@@ -124,4 +123,5 @@
   "zenMode.hideActivityBar": false,
   "zenMode.showTabs": "none",
   "workbench.agentsWindowButton.enabled": false,
+  "cursor.general.fontSmoothingAntialiased": true,
 }
