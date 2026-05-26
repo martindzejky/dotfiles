@@ -46,10 +46,6 @@
     # cursor
     '~/Library/Application Support/Cursor/User/settings.json': cursor/settings.json
     '~/Library/Application Support/Cursor/User/keybindings.json': cursor/keybindings.json
-    ~/.cursor/skills: ai/skills
-    ~/.cursor/commands: ai/commands
-    ~/.cursor/agents: ai/agents
-    ~/.cursor/rules: ai/rules
 
     # ranger
     ~/.config/ranger: ranger
