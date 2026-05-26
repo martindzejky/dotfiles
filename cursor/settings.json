@@ -124,4 +124,5 @@
   "zenMode.showTabs": "none",
   "workbench.agentsWindowButton.enabled": false,
   "cursor.general.fontSmoothingAntialiased": true,
+  "cursor.composer.editorConversationDensity": "compact-all-grouped",
 }
