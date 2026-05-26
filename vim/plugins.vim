@@ -34,6 +34,9 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
+" Should make vim-commentary work properly in multi-language files like vue.
+Plug 'suy/vim-context-commentstring'
+
 " Adds entire buffer text objects.
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
