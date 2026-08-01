@@ -42,6 +42,9 @@ RUN mkdir -p /home/ubuntu/.cursor && \
 
 RUN chown -R ubuntu:ubuntu /home/ubuntu
 
+# Workaround: expose ~/.cursor at the filesystem root so Cursor's upward walk finds it
+RUN ln -s /home/ubuntu/.cursor /.cursor
+
 ########################################################
 # SET USER
 ########################################################
