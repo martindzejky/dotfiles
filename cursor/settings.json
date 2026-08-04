@@ -111,7 +111,6 @@
   "window.density.editorTabHeight": "compact",
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Solarized Light",
-  "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -120,7 +119,6 @@
   "workbench.editor.limit.value": 1,
   "workbench.editor.showTabs": "none",
   "workbench.iconTheme": "eyecons",
-  "workbench.layoutControl.enabled": false,
   "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.view.showQuietly": {
