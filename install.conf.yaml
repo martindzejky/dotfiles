@@ -42,9 +42,12 @@
     # vim
     ~/.config/nvim: vim
 
-    # cursor
+    # cursor and visual studio code
+    # vscode settings intentionally duplicate cursor settings
     '~/Library/Application Support/Cursor/User/settings.json': cursor/settings.json
     '~/Library/Application Support/Cursor/User/keybindings.json': cursor/keybindings.json
+    '~/Library/Application Support/Code/User/settings.json': cursor/settings.json
+    '~/Library/Application Support/Code/User/keybindings.json': vscode/keybindings.json
 
     # ranger
     ~/.config/ranger: ranger

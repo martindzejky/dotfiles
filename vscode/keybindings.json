@@ -1,0 +1,98 @@
+[
+  {
+    "command": "-editor.action.outdentLines",
+    "key": "cmd+[",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.indentLines",
+    "key": "cmd+]",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "workbench.action.navigateBack",
+    "key": "cmd+[",
+    "when": "canNavigateBack"
+  },
+  {
+    "command": "-workbench.action.navigateBack",
+    "key": "ctrl+-",
+    "when": "canNavigateBack"
+  },
+  {
+    "command": "workbench.action.navigateForward",
+    "key": "cmd+]",
+    "when": "canNavigateForward"
+  },
+  {
+    "command": "-workbench.action.navigateForward",
+    "key": "ctrl+shift+-",
+    "when": "canNavigateForward"
+  },
+  {
+    "command": "workbench.action.quickOpen",
+    "key": "cmd+p"
+  },
+  {
+    "command": "-workbench.action.quickOpen",
+    "key": "cmd+p"
+  },
+  {
+    "command": "workbench.action.showCommands",
+    "key": "shift+cmd+p"
+  },
+  {
+    "command": "-workbench.action.showCommands",
+    "key": "shift+cmd+p"
+  },
+  {
+    "command": "-editor.action.nextMatchFindAction",
+    "key": "cmd+g",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.findNext",
+    "key": "cmd+g",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.goToRecentDirectory",
+    "key": "cmd+g",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "command": "-editor.action.previousMatchFindAction",
+    "key": "shift+cmd+g",
+    "when": "editorFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.findPrevious",
+    "key": "shift+cmd+g",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "command": "-workbench.action.terminal.openDetectedLink",
+    "key": "shift+cmd+g",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "shift+cmd+g",
+    "when": "workbench.scm.active"
+  },
+  {
+    "command": "-workbench.view.scm",
+    "key": "ctrl+shift+g",
+    "when": "workbench.scm.active"
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "shift+cmd+g",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "command": "-workbench.view.scm",
+    "key": "ctrl+shift+g",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  }
+]
