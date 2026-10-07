@@ -104,7 +104,6 @@
   "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontSize": 14,
-  "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/ag",
   "typescript.autoClosingTags": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "update.showReleaseNotes": false,
@@ -132,4 +131,13 @@
   "zenMode.fullScreen": false,
   "zenMode.hideActivityBar": false,
   "zenMode.showTabs": "none",
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml",
+  ],
+  "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
 }
