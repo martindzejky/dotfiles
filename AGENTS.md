@@ -14,3 +14,12 @@ After you finish, sanity-check what you changed (syntax where relevant, and that
 
 Local setup is via `./install` (dotbot). Do **not** run the full install in cloud, it assumes macOS / Homebrew.
 Prefer editing configs and verifying by inspection.
+
+## Cursor Cloud specific instructions
+
+The Cloud Agent image provides fish 3.7, Neovim 0.9, vim-plug, and Starship 1.26. `~/.config/nvim` points at `vim/`, and the dotbot submodules are checked out. `./install` is not run.
+
+- Leave the fish config unlinked. `fish/config/brew.fish` calls `/opt/homebrew/bin/brew`.
+- `git/gitconfig-system-specific` is gitignored and is not in the repo.
+- Codeberg blocks cloud IPs, so `leap.nvim` stays uninstalled. Neovim still loads the rest of `vim/`.
+- Check edits with `fish -n` on the changed `*.fish` files, `TERM=xterm-256color STARSHIP_CONFIG=fish/starship.toml starship prompt`, and `nvim --headless`.
