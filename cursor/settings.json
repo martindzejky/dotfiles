@@ -140,4 +140,7 @@
     "**/.forgejo/workflows/*.yaml",
   ],
   "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
+  "cursor.composer.codeBlockWordWrap": true,
+  "cursor.composer.queueManualSendBehavior2": "steer",
+  "cursor.worktreeMaxCount": 15,
 }
