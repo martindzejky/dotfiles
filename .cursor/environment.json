@@ -1,8 +1,0 @@
-{
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "user": "ubuntu",
-  "install": "sh .cursor/install.sh",
-  "repositoryDependencies": ["https://github.com/martindzejky/agentfiles"]
-}
