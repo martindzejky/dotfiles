@@ -143,4 +143,5 @@
   "cursor.composer.codeBlockWordWrap": true,
   "cursor.composer.queueManualSendBehavior2": "steer",
   "cursor.worktreeMaxCount": 15,
+  "editor.linkedEditing": true,
 }
