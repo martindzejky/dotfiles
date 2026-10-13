@@ -26,7 +26,6 @@ brew "the_silver_searcher"
 brew "zoxide"
 
 cask "alfred"
-cask "cursor"
 cask "discord"
 cask "docker"
 cask "figma"
